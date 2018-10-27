@@ -10,7 +10,7 @@ public class LoginLogoutPageSteps extends ScenarioSteps {
     LoginLogoutPage sp;
 
     @Step("Test 1: Login button functionality and elements are present")
-    public void loginElements() throws InterruptedException {
+    public void loginElements() {
         sp.loginElements();
     }
     @Step("Test 2: Succesfull login")
@@ -19,7 +19,7 @@ public class LoginLogoutPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 3: Empty fields login")
-    public void emptyfieldsLogin() throws InterruptedException {
+    public void emptyfieldsLogin() {
         sp.emptyFieldsLogin();
     }
 

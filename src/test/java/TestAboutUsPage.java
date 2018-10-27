@@ -1,3 +1,4 @@
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -21,7 +22,7 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "/urls.csv", separator = Constants.CSV_SEPARATOR)
-public class TestAboutUsPage {
+public class TestAboutUsPage extends PageObject {
 
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
@@ -37,7 +38,7 @@ public class TestAboutUsPage {
         getDriver().get(url);
 
         // make sure the window is maximized
-        getDriver().manage().window().maximize();
+        driver.manage().window().maximize();
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
@@ -55,19 +56,19 @@ public class TestAboutUsPage {
 
     @Test
     @Title("About Us X button functionality")
-    public void aboutUsXButtonFunctionality() throws InterruptedException {
+    public void aboutUsXButtonFunctionality() {
 
         step.aboutUsXbutton();
-        Thread.sleep(2000);
-        getDriver().quit();
+        waitABit(2000);
+        driver.quit();
     }
 
     @Test
     @Title("About Us Close button functionality")
-    public void aboutUsCloseButtonFunctionality() throws InterruptedException {
+    public void aboutUsCloseButtonFunctionality() {
 
         step.aboutUsClosebutton();
-        Thread.sleep(1000);
-        getDriver().quit();
+        waitABit(1000);
+        driver.quit();
     }
 }

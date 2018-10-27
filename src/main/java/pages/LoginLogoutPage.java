@@ -32,7 +32,7 @@ public class LoginLogoutPage extends PageObject {
 
 
     // Test 1: Login button functionality and elements are present
-    public void loginElements() throws InterruptedException {
+    public void loginElements() {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         Assert.assertTrue("Username field is not displayed", username.isDisplayed());
@@ -61,12 +61,11 @@ public class LoginLogoutPage extends PageObject {
     }
 
     // Test 3: Empty fields login
-    public void emptyFieldsLogin () throws InterruptedException {
+    public void emptyFieldsLogin () {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
-        Thread.sleep(3000);
-        loginButton.click();
-        Thread.sleep(3000);
+        waitABit(3000);
+        loginButton.click();waitABit(3000);
     }
 
     // Test 4: Empty field for username

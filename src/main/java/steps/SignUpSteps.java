@@ -10,7 +10,7 @@ public class SignUpSteps extends ScenarioSteps {
     SignUpPage sp;
 
     @Step("Test 1: Username and Password text is present")
-    public void loginElements() throws InterruptedException {
+    public void loginElements() {
         sp.loginElements();
     }
 
@@ -26,7 +26,7 @@ public class SignUpSteps extends ScenarioSteps {
     }
 
     @Step("Test 4: Valid credentials for username and empty field for password")
-    public void signUpEmptyPasswordField() throws InterruptedException {
+    public void signUpEmptyPasswordField() {
         UserInfo userInfo = new UserInfo().generateUser();
         sp.emptyFieldForPasswordSignUp(userInfo);
     }
@@ -50,24 +50,24 @@ public class SignUpSteps extends ScenarioSteps {
     }
 
     @Step("Test 8: Invalid credentials (select space to put blank space for username and password )")
-    public void blankSpace() throws InterruptedException {
+    public void blankSpace() {
         sp.blankSpaceSignUp();
     }
 
     @Step(" Test 9: Invalid credentials (valid username and password and a blank space)")
-    public void validCredentialsAndBlankSpace() throws InterruptedException {
+    public void validCredentialsAndBlankSpace() {
         UserInfo userInfo = new UserInfo().generateUser();
         sp.validCredentialsAndBlankSpaceSignUp(userInfo);
     }
 
     @Step("Test 10: Invalid credentials (lowercase credentials for password")
-    public void lowercaseCredentials() throws InterruptedException {
+    public void lowercaseCredentials() {
         UserInfo userInfo = new UserInfo().generateUser();
         sp.lowercaseCredentials(userInfo);
     }
 
     @Step("Test 11: Invalid credentials (uppercase credentials for password)")
-    public void upperCaseCredentials() throws InterruptedException {
+    public void upperCaseCredentials() {
         UserInfo userInfo = new UserInfo().generateUser();
         sp.uppercaseCredentials(userInfo);
     }

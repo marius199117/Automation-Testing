@@ -49,18 +49,18 @@ public class ContactPage extends PageObject {
     }
 
     // Test 3: Successful contact form
-    public void succesfullContact() throws InterruptedException {
+    public void succesfullContact() {
         contact.click();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
-        Thread.sleep(1000);
+        waitABit(1000);
         contactEmailField.sendKeys("marius@yahoo.com");
-        Thread.sleep(1000);
+        waitABit(1000);
         contactNameField.sendKeys("Marius");
-        Thread.sleep(1000);
+        waitABit(1000);
         message.sendKeys("Salut");
-        Thread.sleep(1000);
+        waitABit(1000);
         sendMessage.click();
-        Thread.sleep(5000);
+        waitABit(5000);
     }
 
     // Test 4: Cancel button functionality
@@ -71,7 +71,7 @@ public class ContactPage extends PageObject {
     }
 
     // Test 5: Contact form empty fields
-    public void emptyFields() throws InterruptedException {
+    public void emptyFields() {
         contact.click();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
         sendMessage.click();

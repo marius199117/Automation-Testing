@@ -12,15 +12,13 @@ import org.openqa.selenium.WebDriver;
 import common.Application;
 import common.Constants;
 import steps.ContactPageSteps;
-
 import java.util.concurrent.TimeUnit;
 
-import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "/urls.csv", separator = Constants.CSV_SEPARATOR)
-public class TestContactPage  {
+public class TestContactPage extends PageObject {
 
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
@@ -35,10 +33,10 @@ public class TestContactPage  {
     public void setupBrowser() {
 
         //open url
-        getDriver().get(url);
+        driver.get(url);
 
         // make sure the window is maximized
-        getDriver().manage().window().maximize();
+        driver.manage().window().maximize();
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
@@ -47,56 +45,56 @@ public class TestContactPage  {
 
     @Test
     @Title("Contact functionality")
-    public void contactButtonFunctionality() throws InterruptedException {
+    public void contactButtonFunctionality() {
 
         step.contactButtonFunctionality();
-        Thread.sleep(1000);
-        getDriver().quit();
+        waitABit(1000);
+        driver.quit();
 
     }
 
     @Test
     @Title("Contact Elements")
-    public void contactElements() throws InterruptedException {
+    public void contactElements() {
 
         step.contactElements();
-        Thread.sleep(1000);
-        getDriver().quit();
+        waitABit(1000);
+        driver.quit();
     }
 
     @Test
     @Title("Contact Form")
-    public void succesfullContactForm() throws InterruptedException {
+    public void succesfullContactForm() {
 
         step.succesfullContactForm();
-        Thread.sleep(1000);
-        getDriver().quit();
+        waitABit(1000);
+        driver.quit();
     }
 
     @Test
     @Title("Contact - Cancel button functionalityZ")
-    public void cancelButtonFunctionality() throws InterruptedException {
+    public void cancelButtonFunctionality() {
 
         step.cancelButtonFunctionality();
-        Thread.sleep(1000);
-        getDriver().quit();
+        waitABit(1000);
+        driver.quit();
     }
 
     @Test
     @Title("Contact form empty fields")
-    public void ContactEmptyFields() throws InterruptedException {
+    public void ContactEmptyFields() {
 
         step.contactEmptyFields();
-        Thread.sleep(1000);
-        getDriver().quit();
+        waitABit(1000);
+        driver.quit();
     }
 
     @Test
     @Title("Contact form invalid credentials")
-    public void ContactInvalidCredentials() throws InterruptedException {
+    public void ContactInvalidCredentials() {
 
         step.contactInvalidCredentials();
-        Thread.sleep(1000);
-        getDriver().quit();
+        waitABit(1000);
+        driver.quit();
     }
 }

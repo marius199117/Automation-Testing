@@ -29,7 +29,7 @@ public class UserInfo {
         password = username;
         username2 = "yopeso" + randomString.nextString();
 
-        // Invalid Credentials
+        // Invalid Credentials-
         validUsernameBlankSpace = new RandomString(20, new Random(), RandomString.alphanum).nextString() +
                 " ";
         validPasswordBlankSpace = validUsernameBlankSpace;

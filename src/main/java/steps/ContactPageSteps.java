@@ -20,7 +20,7 @@ public class ContactPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 3: Successful contact form")
-    public void succesfullContactForm() throws InterruptedException {
+    public void succesfullContactForm() {
         sp.succesfullContact();
     }
 
@@ -30,7 +30,7 @@ public class ContactPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 5: Contact form empty fields")
-    public void contactEmptyFields() throws InterruptedException {
+    public void contactEmptyFields() {
         sp.emptyFields();
     }
 
