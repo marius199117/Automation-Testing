@@ -39,23 +39,23 @@ public class LoginLogoutPage extends PageObject {
         Assert.assertTrue("Password field is not displayed", password.isDisplayed());
         Assert.assertTrue("Close Button is not displayed", closeButton.isDisplayed());
         Assert.assertTrue("Login Button is not displayed", loginButton.isDisplayed());
-        Thread.sleep(1000);
+        waitABit(1000);
     }
 
     // Test 2: Successful login and logout
-    public void successfulLogin (String user, String pass) throws InterruptedException {
+    public void successfulLogin (String user, String pass) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         username.sendKeys(user);
-        Thread.sleep(3000);
+        waitABit(3000);
         password.sendKeys(pass);
-        Thread.sleep(3000);
+        waitABit(3000);
         loginButton.click();
-        Thread.sleep(3000);
+        waitABit(3000);
         Assert.assertTrue("Login Confirmation is not functional", loginConfirmation.isDisplayed());
-        Thread.sleep(3000);
+        waitABit(3000);
         logout.click();
-        Thread.sleep(3000);
+        waitABit(3000);
         Assert.assertTrue("The user is not logged out", logIn.isDisplayed());
 
     }
@@ -70,46 +70,46 @@ public class LoginLogoutPage extends PageObject {
     }
 
     // Test 4: Empty field for username
-    public void emptyUsernameField () throws InterruptedException {
+    public void emptyUsernameField () {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
-        Thread.sleep(3000);
+        waitABit(3000);
         password.sendKeys("Marius91!");
         loginButton.click();
-        Thread.sleep(3000);
+        waitABit(3000);
     }
     // Test 5: Empty field for password
-    public void emptyPasswordField () throws InterruptedException {
+    public void emptyPasswordField () {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
-        Thread.sleep(3000);
+        waitABit(3000);
         username.sendKeys("Marius91!");
         loginButton.click();
-        Thread.sleep(3000);
+        waitABit(3000);
     }
 
     // Test 5: Invalid credentials (invalid username and password credentials)
-    public void invalidCredentials (UserInfo userInfo) throws InterruptedException {
+    public void invalidCredentials (UserInfo userInfo) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
-        Thread.sleep(3000);
+        waitABit(3000);
         username.sendKeys(userInfo.username);
-        Thread.sleep(3000);
+        waitABit(3000);
         password.sendKeys(userInfo.password);
         loginButton.click();
-        Thread.sleep(3000);
+        waitABit(3000);
     }
 
     // Test 6: Invalid credentials (valid username and password with a space afterwards)
-    public void usernamePasswordSpaceAfterwards (String invalidUser, String invalidPas) throws InterruptedException {
+    public void usernamePasswordSpaceAfterwards (String invalidUser, String invalidPas) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         username.sendKeys(invalidUser);
-        Thread.sleep(3000);
+        waitABit(3000);
         password.sendKeys(invalidPas);
-        Thread.sleep(3000);
+        waitABit(3000);
         loginButton.click();
-        Thread.sleep(3000);
+        waitABit(3000);
     }
 
     // Test 7: Invalid credentials (

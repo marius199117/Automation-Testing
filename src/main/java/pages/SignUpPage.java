@@ -37,24 +37,24 @@ public class SignUpPage extends PageObject {
     }
 
     // Test 2 : Successful sign up
-    public void successfulSignUp(UserInfo userInfo) throws InterruptedException {
+    public void successfulSignUp(UserInfo userInfo) {
         signUp.click();
         Assert.assertTrue("Sign Up is not displayed", signUp.isDisplayed());
         usernameField.sendKeys(userInfo.username);
-        Thread.sleep(1000);
+        waitABit(1000);
         passwordField.sendKeys(userInfo.password);
-        Thread.sleep(1000);
+        waitABit(1000);
         signUpButton.click();
-        Thread.sleep(1000);
+        waitABit(1000);
 
     }
 
     // Test 3 : Empty fields sign up
-    public void emptyFieldsSignUp() throws InterruptedException {
+    public void emptyFieldsSignUp() {
         signUp.click();
         Assert.assertTrue("Sign Up is not displayed", signUp.isDisplayed());
         signUpButton.click();
-        Thread.sleep(1000);
+        waitABit(1000);
 
     }
 
@@ -70,39 +70,39 @@ public class SignUpPage extends PageObject {
     }
 
     // Test 5: Username field with valid credentials and empty field for password
-    public void emptyFieldForUsernameSignUp(UserInfo userInfo) throws InterruptedException {
+    public void emptyFieldForUsernameSignUp(UserInfo userInfo) {
         signUp.click();
         Assert.assertTrue("Sign Up is not functional", signUp.isDisplayed());
         passwordField.sendKeys(userInfo.password);
-        Thread.sleep(1000);
+        waitABit(1000);
         signUpButton.click();
-        Thread.sleep(1000);
+        waitABit(1000);
 
     }
 
     // Test 6: Invalid credentials (special characters for username and password)
-    public void specialCharactersSignUp(UserInfo userInfo) throws InterruptedException {
+    public void specialCharactersSignUp(UserInfo userInfo) {
         signUp.click();
         Assert.assertTrue("Sign Up is not functional", signUp.isDisplayed());
         usernameField.sendKeys(userInfo.usernameSpecialCharacters);
-        Thread.sleep(1000);
+        waitABit(1000);
         passwordField.sendKeys(userInfo.passwordSpecialCharacters);
-        Thread.sleep(1000);
+        waitABit(1000);
         signUpButton.click();
-        Thread.sleep(1000);
+        waitABit(1000);
 
     }
 
     // Test 7: Invalid credentials (Digits for username and password)
-    public void digitsSignUp(UserInfo userInfo) throws InterruptedException {
+    public void digitsSignUp(UserInfo userInfo) {
         signUp.click();
         Assert.assertTrue("Sign Up is not functional", signUp.isDisplayed());
         usernameField.sendKeys(userInfo.usernameDigits);
-        Thread.sleep(1000);
+        waitABit(1000);
         passwordField.sendKeys(userInfo.passwordDigits);
-        Thread.sleep(1000);
+        waitABit(1000);
         signUpButton.click();
-        Thread.sleep(1000);
+        waitABit(1000);
 
     }
 

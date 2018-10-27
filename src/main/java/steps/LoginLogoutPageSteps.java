@@ -14,7 +14,7 @@ public class LoginLogoutPageSteps extends ScenarioSteps {
         sp.loginElements();
     }
     @Step("Test 2: Succesfull login")
-    public void successfullLogin(String user, String pass) throws InterruptedException {
+    public void successfullLogin(String user, String pass) {
         sp.successfulLogin(user, pass);
     }
 
@@ -24,23 +24,23 @@ public class LoginLogoutPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 4: Empty field for username")
-    public void emptyUsernameField() throws InterruptedException {
+    public void emptyUsernameField() {
         sp.emptyUsernameField();
     }
 
     @Step("Test 4: Empty field for password")
-    public void emptyPasswordField() throws InterruptedException {
+    public void emptyPasswordField() {
         sp.emptyPasswordField();
     }
 
     @Step("Test 5: Invalid credentials (invalid username and password credentials)")
-    public void invalidCredentials() throws InterruptedException {
+    public void invalidCredentials() {
         UserInfo userInfo = new UserInfo();
         sp.invalidCredentials(userInfo);
     }
 
     @Step("Test 6: Invalid credentials (valid username and password with a space afterwards")
-    public void usernamePasswordSpaceAfterwards(String invalidUser, String invalidPas) throws InterruptedException {
+    public void usernamePasswordSpaceAfterwards(String invalidUser, String invalidPas) {
         sp.usernamePasswordSpaceAfterwards(invalidUser, invalidPas);
     }
 }

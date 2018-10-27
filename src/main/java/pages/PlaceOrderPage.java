@@ -44,25 +44,25 @@ public class PlaceOrderPage extends PageObject {
 
 
     // Test 1: Successful order placement
-    public void placeOrderFlow() throws Exception {
+    public void placeOrderFlow() {
 
 //        LoginLogoutPage loginLogoutPage = new LoginLogoutPage();
 //        loginLogoutPage.successfulLogin();
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
-        Thread.sleep(2000);
+        waitABit(2000);
         username.sendKeys("Marius91!");
-        Thread.sleep(3000);
+        waitABit(3000);
         password.sendKeys("Marius91!");
-        Thread.sleep(3000);
+        waitABit(3000);
         loginButton.click();
-        Thread.sleep(3000);
+        waitABit(3000);
         product1.click();
-        Thread.sleep(5000);
+        waitABit(5000);
         addToCartButton.click();
-        Thread.sleep(7000);
+        waitABit(7000);
         cartOption.click();
-        Thread.sleep(5000);
+        waitABit(5000);
         org.openqa.selenium.Alert alert = driver.switchTo().alert();
         alert.accept();
         waitABit(3000);

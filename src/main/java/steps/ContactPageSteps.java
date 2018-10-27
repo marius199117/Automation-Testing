@@ -25,7 +25,7 @@ public class ContactPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 4: Cancel button functionality")
-    public void cancelButtonFunctionality() throws InterruptedException {
+    public void cancelButtonFunctionality() {
         sp.cancelButtonFunctionality();
     }
 
@@ -35,7 +35,7 @@ public class ContactPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 6: Contact form invalid credentials")
-    public void contactInvalidCredentials () throws InterruptedException {
+    public void contactInvalidCredentials () {
         sp.invalidCredentials();
     }
 

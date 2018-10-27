@@ -1,11 +1,7 @@
 package pages;
 
-import common.PopUp;
 import net.serenitybdd.core.pages.PageObject;
-import net.thucydides.core.annotations.Managed;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -82,16 +78,16 @@ public class ContactPage extends PageObject {
     }
 
     // Test 6: Contact form invalid credentials
-    public void invalidCredentials() throws InterruptedException {
+    public void invalidCredentials() {
         contact.click();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
-        Thread.sleep(1000);
+        waitABit(1000);
         contactEmailField.sendKeys("1234£$%^*())");
-        Thread.sleep(1000);
+        waitABit(1000);
         contactNameField.sendKeys("1234£$%^*())");
-        Thread.sleep(1000);
+        waitABit(1000);
         message.sendKeys("1234£$%^*())");
-        Thread.sleep(1000);
+        waitABit(1000);
         sendMessage.click();
     }
 }

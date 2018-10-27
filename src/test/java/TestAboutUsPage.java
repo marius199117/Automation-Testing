@@ -46,7 +46,7 @@ public class TestAboutUsPage {
 
     @Test
     @Title("About Us button functionality")
-    public void aboutUsFlowFunctionality() throws InterruptedException {
+    public void aboutUsFlowFunctionality() {
 
         step.aboutUsButtonFunctionality();
         

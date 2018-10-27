@@ -1,3 +1,4 @@
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -19,7 +20,7 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "/urls.csv", separator = Constants.CSV_SEPARATOR)
-public class TestContactPage {
+public class TestContactPage  {
 
     @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
