@@ -15,13 +15,13 @@ public class SignUpSteps extends ScenarioSteps {
     }
 
     @Step("Test 2 : Successful sign up")
-    public void signUpFunctionality() throws InterruptedException {
+    public void signUpFunctionality() {
         UserInfo userInfo = new UserInfo().generateUser();
         sp.successfulSignUp(userInfo);
     }
 
     @Step("Test 3 : Empty fields sign up")
-    public void signUpEmptyFields() throws InterruptedException {
+    public void signUpEmptyFields() {
         sp.emptyFieldsSignUp();
     }
 
@@ -32,19 +32,19 @@ public class SignUpSteps extends ScenarioSteps {
     }
 
     @Step("Test 5: Empty field for username and valid credentials for password")
-    public void signUpEmptyUsernameField() throws InterruptedException {
+    public void signUpEmptyUsernameField() {
         UserInfo userInfo = new UserInfo().generateUser();
         sp.emptyFieldForUsernameSignUp(userInfo);
     }
 
     @Step("Test 6: Invalid credentials (special characters for username and password)")
-    public void specialCharacters() throws InterruptedException {
+    public void specialCharacters() {
         UserInfo userInfo = new UserInfo().generateUser();
         sp.specialCharactersSignUp(userInfo);
     }
 
     @Step("Test 7: Invalid credentials (Digits for username and password)")
-    public void digits() throws InterruptedException {
+    public void digits() {
         UserInfo userInfo = new UserInfo().generateUser();
         sp.digitsSignUp(userInfo);
     }

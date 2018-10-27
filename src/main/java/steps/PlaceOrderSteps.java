@@ -7,7 +7,7 @@ public class PlaceOrderSteps extends ScenarioSteps {
     PlaceOrderPage sp;
 
     @Step("Test 1: Successful order placement")
-    public void successfulOrderPlacement() throws Exception {
+    public void successfulOrderPlacement() {
         sp.placeOrderFlow();
     }
 }
