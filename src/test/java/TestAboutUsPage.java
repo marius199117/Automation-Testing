@@ -50,7 +50,7 @@ public class TestAboutUsPage extends PageObject {
     public void aboutUsFlowFunctionality() {
 
         step.aboutUsButtonFunctionality();
-        
+
 
     }
 

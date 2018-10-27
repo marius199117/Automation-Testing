@@ -12,6 +12,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import steps.SignUpSteps;
+
 import java.util.concurrent.TimeUnit;
 
 @Story(Application.SomeFeature.class)
@@ -105,7 +106,7 @@ public class TestSignUp extends PageObject {
 
     @Test
     @Title("Invalid credentials (select space to put blank space for username and password )")
-    public void blankSpaceSignUp()  {
+    public void blankSpaceSignUp() {
 
         step.blankSpace();
         waitABit(1000);

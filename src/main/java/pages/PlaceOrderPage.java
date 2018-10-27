@@ -66,6 +66,6 @@ public class PlaceOrderPage extends PageObject {
         org.openqa.selenium.Alert alert = driver.switchTo().alert();
         alert.accept();
         waitABit(3000);
-        
+
     }
 }

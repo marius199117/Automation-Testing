@@ -43,7 +43,7 @@ public class LoginLogoutPage extends PageObject {
     }
 
     // Test 2: Successful login and logout
-    public void successfulLogin (String user, String pass) {
+    public void successfulLogin(String user, String pass) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         username.sendKeys(user);
@@ -61,15 +61,16 @@ public class LoginLogoutPage extends PageObject {
     }
 
     // Test 3: Empty fields login
-    public void emptyFieldsLogin () {
+    public void emptyFieldsLogin() {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         waitABit(3000);
-        loginButton.click();waitABit(3000);
+        loginButton.click();
+        waitABit(3000);
     }
 
     // Test 4: Empty field for username
-    public void emptyUsernameField () {
+    public void emptyUsernameField() {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         waitABit(3000);
@@ -77,8 +78,9 @@ public class LoginLogoutPage extends PageObject {
         loginButton.click();
         waitABit(3000);
     }
+
     // Test 5: Empty field for password
-    public void emptyPasswordField () {
+    public void emptyPasswordField() {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         waitABit(3000);
@@ -88,7 +90,7 @@ public class LoginLogoutPage extends PageObject {
     }
 
     // Test 5: Invalid credentials (invalid username and password credentials)
-    public void invalidCredentials (UserInfo userInfo) {
+    public void invalidCredentials(UserInfo userInfo) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         waitABit(3000);
@@ -100,7 +102,7 @@ public class LoginLogoutPage extends PageObject {
     }
 
     // Test 6: Invalid credentials (valid username and password with a space afterwards)
-    public void usernamePasswordSpaceAfterwards (String invalidUser, String invalidPas) {
+    public void usernamePasswordSpaceAfterwards(String invalidUser, String invalidPas) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         username.sendKeys(invalidUser);

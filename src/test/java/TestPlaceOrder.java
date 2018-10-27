@@ -12,6 +12,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import steps.PlaceOrderSteps;
+
 import java.util.concurrent.TimeUnit;
 
 @Story(Application.SomeFeature.class)
@@ -39,8 +40,8 @@ public class TestPlaceOrder extends PageObject {
         driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 
 
-
     }
+
     @Test
     @Title("Successful order placement")
     public void successfulOrder() {

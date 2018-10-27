@@ -1,4 +1,5 @@
 package common;
+
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,6 @@ public class PopUp {
         alert.accept();
 
 
-        }
     }
+}
 

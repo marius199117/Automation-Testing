@@ -35,7 +35,7 @@ public class ContactPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 6: Contact form invalid credentials")
-    public void contactInvalidCredentials () {
+    public void contactInvalidCredentials() {
         sp.invalidCredentials();
     }
 

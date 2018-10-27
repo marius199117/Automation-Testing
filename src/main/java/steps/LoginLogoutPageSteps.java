@@ -13,6 +13,7 @@ public class LoginLogoutPageSteps extends ScenarioSteps {
     public void loginElements() {
         sp.loginElements();
     }
+
     @Step("Test 2: Succesfull login")
     public void successfullLogin(String user, String pass) {
         sp.successfulLogin(user, pass);

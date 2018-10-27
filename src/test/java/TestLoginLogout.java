@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import common.Application;
 import common.Constants;
 import steps.LoginLogoutPageSteps;
+
 import java.util.concurrent.TimeUnit;
 
 @Story(Application.SomeFeature.class)
@@ -58,7 +59,7 @@ public class TestLoginLogout extends PageObject {
     @Title("Succesfull login")
     public void successfulLogin() {
 
-        step.successfullLogin(username,password);
+        step.successfullLogin(username, password);
         waitABit(1000);
         driver.quit();
     }
@@ -92,7 +93,7 @@ public class TestLoginLogout extends PageObject {
 
     @Test
     @Title("Invalid credentials (invalid username and password credentials)")
-    public void invalidCredentialsLogin() throws InterruptedException{
+    public void invalidCredentialsLogin() throws InterruptedException {
 
         step.invalidCredentials();
         Thread.sleep(1000);
@@ -103,7 +104,7 @@ public class TestLoginLogout extends PageObject {
     @Title("Invalid credentials (valid username and password with a space afterwards)")
     public void usernamePasswordSpaceAfterwardsLogin() {
 
-        step.usernamePasswordSpaceAfterwards(invalidUsername,invalidPassword);
+        step.usernamePasswordSpaceAfterwards(invalidUsername, invalidPassword);
         waitABit(1000);
         driver.quit();
     }
