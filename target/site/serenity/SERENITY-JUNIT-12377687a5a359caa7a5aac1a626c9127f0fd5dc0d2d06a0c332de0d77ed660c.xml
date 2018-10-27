@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="TestContactPage" skipped="0" tests="3" time="3.77" timestamp="2018-09-244 02:18:36"><testcase classname="TestContactPage" name="Contact functionality"/><testcase classname="TestContactPage" name="Contact Elements"/><testcase classname="TestContactPage" name="Contact Form"/></testsuite>
