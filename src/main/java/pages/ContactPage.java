@@ -12,8 +12,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class ContactPage extends PageObject {
 
-    @Managed(uniqueSession = true, driver = "Chrome")
-    public WebDriver driver;
 
     @FindBy(css = "a.nav-link[data-target*=\"#exampleModal\"]")
     WebElement contact;
@@ -67,10 +65,6 @@ public class ContactPage extends PageObject {
         Thread.sleep(1000);
         sendMessage.click();
         Thread.sleep(5000);
-        Alert alert = driver.switchTo().alert();
-      //  System.out.println(alert.getText());
-       // String text = alert.getText();
-        alert.accept();
     }
 
     // Test 4: Cancel button functionality

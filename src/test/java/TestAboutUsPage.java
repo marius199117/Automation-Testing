@@ -23,7 +23,7 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 @UseTestDataFrom(value = "/urls.csv", separator = Constants.CSV_SEPARATOR)
 public class TestAboutUsPage {
 
-    @Managed(uniqueSession = true, driver = "Firefox")
+    @Managed(uniqueSession = true, driver = "Chrome")
     public WebDriver driver;
 
     @Steps
