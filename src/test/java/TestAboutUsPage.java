@@ -17,7 +17,6 @@ import steps.AboutUsPageSteps;
 
 import java.util.concurrent.TimeUnit;
 
-import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 
 @Story(Application.SomeFeature.class)
 @RunWith(SerenityParameterizedRunner.class)
