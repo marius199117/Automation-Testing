@@ -20,6 +20,7 @@ public class UserInfo {
     public String invalidName = "";
     public String invalidMessage = "";
 
+
     //generate valid random user info
     public UserInfo generateUser() {
 
@@ -45,8 +46,9 @@ public class UserInfo {
         usernameUppercaseCredentials = new RandomString(10, new Random(), RandomString.upper).nextString();
         passwordUppercaseCredentials = usernameUppercaseCredentials;
         invalidEmail = new RandomString(10,new Random(), RandomString.alphanum).nextString();
-        invalidName = new RandomString(10, new Random(), RandomString.specialCharacter).nextString();
-        invalidMessage = invalidName;
+        invalidName = invalidEmail;
+        invalidMessage = invalidEmail;
+
 
         // login name for mail validation flow
         return this;

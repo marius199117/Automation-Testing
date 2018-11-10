@@ -103,13 +103,13 @@ public class LoginLogoutPage extends PageObject {
     }
 
     // Test 6: Invalid credentials (valid username and password with a space afterwards)
-    public void usernamePasswordSpaceAfterwards(String invalidUser, String invalidPas) {
+    public void usernamePasswordSpaceAfterwards(UserInfo userInfo) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         waitABit(3000);
-        username.sendKeys(invalidUser);
+        username.sendKeys(userInfo.validUsernameBlankSpace);
         waitABit(3000);
-        password.sendKeys(invalidPas);
+        password.sendKeys(userInfo.validPasswordBlankSpace);
         waitABit(3000);
         loginButton.click();
         waitABit(3000);

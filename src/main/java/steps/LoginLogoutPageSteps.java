@@ -41,7 +41,8 @@ public class LoginLogoutPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 6: Invalid credentials (valid username and password with a space afterwards")
-    public void usernamePasswordSpaceAfterwards(String invalidUser, String invalidPas) {
-        sp.usernamePasswordSpaceAfterwards(invalidUser, invalidPas);
+    public void usernamePasswordSpaceAfterwards() {
+        UserInfo userInfo = new UserInfo();
+        sp.usernamePasswordSpaceAfterwards(userInfo);
     }
 }

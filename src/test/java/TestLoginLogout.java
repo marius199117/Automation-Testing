@@ -30,8 +30,7 @@ public class TestLoginLogout extends PageObject {
     private String url;
     private String username;
     private String password;
-    private String invalidUsername;
-    private String invalidPassword;
+
 
     @Before
     public void setupBrowser() {
@@ -104,7 +103,7 @@ public class TestLoginLogout extends PageObject {
     @Title("Invalid credentials (valid username and password with a space afterwards)")
     public void usernamePasswordSpaceAfterwardsLogin() {
 
-        step.usernamePasswordSpaceAfterwards(invalidUsername, invalidPassword);
+        step.usernamePasswordSpaceAfterwards();
         waitABit(1000);
         driver.quit();
     }
