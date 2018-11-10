@@ -20,8 +20,8 @@ public class ContactPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 3: Successful contact form")
-    public void succesfullContactForm() {
-        sp.succesfullContact();
+    public void succesfullContactForm(String validEmail, String validName, String validMessage) {
+        sp.succesfullContact(validEmail, validName, validMessage);
     }
 
     @Step("Test 4: Cancel button functionality")
@@ -35,8 +35,8 @@ public class ContactPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 6: Contact form invalid credentials")
-    public void contactInvalidCredentials() {
-        sp.invalidCredentials();
+    public void contactInvalidCredentials(String invalidEmail, String invalidName, String invalidMessage) {
+        sp.invalidCredentials(invalidEmail, invalidName, invalidMessage);
     }
 
 }

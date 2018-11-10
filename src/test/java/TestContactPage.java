@@ -28,6 +28,12 @@ public class TestContactPage extends PageObject {
     private ContactPageSteps step;
 
     private String url;
+    private String validEmail;
+    private String validName;
+    private String validMessage;
+    private String invalidEmail;
+    private String invalidName;
+    private String invalidMessage;
 
 
     @Before
@@ -67,7 +73,7 @@ public class TestContactPage extends PageObject {
     @Title("Contact Form")
     public void succesfullContactForm() {
 
-        step.succesfullContactForm();
+        step.succesfullContactForm(validEmail, validName, validMessage);
         waitABit(1000);
         driver.quit();
     }
@@ -94,7 +100,7 @@ public class TestContactPage extends PageObject {
     @Title("Contact form invalid credentials")
     public void ContactInvalidCredentials() {
 
-        step.contactInvalidCredentials();
+        step.contactInvalidCredentials(invalidEmail, invalidName, invalidMessage);
         waitABit(1000);
         driver.quit();
     }

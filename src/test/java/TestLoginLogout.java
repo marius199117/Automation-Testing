@@ -28,8 +28,8 @@ public class TestLoginLogout extends PageObject {
     @Steps
     private LoginLogoutPageSteps step;
     private String url;
-    private String username1;
-    private String password1;
+    private String username;
+    private String password;
     private String invalidUsername;
     private String invalidPassword;
 
@@ -59,7 +59,7 @@ public class TestLoginLogout extends PageObject {
     @Title("Succesfull login")
     public void successfulLogin() {
 
-        step.successfullLogin(username1, password1);
+        step.successfullLogin(username, password);
         waitABit(1000);
         driver.quit();
     }

@@ -49,15 +49,15 @@ public class ContactPage extends PageObject {
     }
 
     // Test 3: Successful contact form
-    public void succesfullContact() {
+    public void succesfullContact(String validEmail, String ValidName, String validMessage) {
         contact.click();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
         waitABit(1000);
-        contactEmailField.sendKeys("marius@yahoo.com");
+        contactEmailField.sendKeys(validEmail);
         waitABit(1000);
-        contactNameField.sendKeys("Marius");
+        contactNameField.sendKeys(ValidName);
         waitABit(1000);
-        message.sendKeys("Salut");
+        message.sendKeys(validMessage);
         waitABit(1000);
         sendMessage.click();
         waitABit(5000);
@@ -78,15 +78,15 @@ public class ContactPage extends PageObject {
     }
 
     // Test 6: Contact form invalid credentials
-    public void invalidCredentials() {
+    public void invalidCredentials(String invalidEmail, String invalidName, String invalidMessage) {
         contact.click();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
         waitABit(1000);
-        contactEmailField.sendKeys("1234£$%^*())");
+        contactEmailField.sendKeys(invalidEmail);
         waitABit(1000);
-        contactNameField.sendKeys("1234£$%^*())");
+        contactNameField.sendKeys(invalidName);
         waitABit(1000);
-        message.sendKeys("1234£$%^*())");
+        message.sendKeys(invalidMessage);
         waitABit(1000);
         sendMessage.click();
     }

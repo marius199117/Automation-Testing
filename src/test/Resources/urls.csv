@@ -1,2 +1,2 @@
-url,username1,password1,invalidUsername,invalidPassword
-https://www.demoblaze.com/,Marius91!,Marius91!,Marius91,Marius91
+url,username,password,invalidUsername,invalidPassword,validEmail,validName,validMessage,invalidEmail,invalidName,invalidMessage
+https://www.demoblaze.com/,Marius91!,Marius91!,Marius91,Marius91,marius@yahoo.com,Marius,Salut,!$%%^*(()!,!$%%^*(()!,!$%%^*(()!
