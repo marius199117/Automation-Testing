@@ -25,13 +25,13 @@ public class LoginLogoutPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 4: Empty field for username")
-    public void emptyUsernameField() {
-        sp.emptyUsernameField();
+    public void emptyUsernameField(String pass) {
+        sp.emptyUsernameField(pass);
     }
 
     @Step("Test 4: Empty field for password")
-    public void emptyPasswordField() {
-        sp.emptyPasswordField();
+    public void emptyPasswordField(String user) {
+        sp.emptyPasswordField(user);
     }
 
     @Step("Test 5: Invalid credentials (invalid username and password credentials)")

@@ -31,10 +31,6 @@ public class TestContactPage extends PageObject {
     private String validEmail;
     private String validName;
     private String validMessage;
-    private String invalidEmail;
-    private String invalidName;
-    private String invalidMessage;
-
 
     @Before
     public void setupBrowser() {
@@ -100,7 +96,7 @@ public class TestContactPage extends PageObject {
     @Title("Contact form invalid credentials")
     public void ContactInvalidCredentials() {
 
-        step.contactInvalidCredentials(invalidEmail, invalidName, invalidMessage);
+        step.contactInvalidCredentials();
         waitABit(1000);
         driver.quit();
     }

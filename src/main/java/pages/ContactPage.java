@@ -1,5 +1,7 @@
 package pages;
 
+import com.sun.jna.platform.win32.Netapi32Util;
+import common.UserInfo;
 import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
@@ -78,15 +80,15 @@ public class ContactPage extends PageObject {
     }
 
     // Test 6: Contact form invalid credentials
-    public void invalidCredentials(String invalidEmail, String invalidName, String invalidMessage) {
+    public void invalidCredentials(UserInfo userInfo) {
         contact.click();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
         waitABit(1000);
-        contactEmailField.sendKeys(invalidEmail);
+        contactEmailField.sendKeys(userInfo.invalidEmail);
         waitABit(1000);
-        contactNameField.sendKeys(invalidName);
+        contactNameField.sendKeys(userInfo.invalidName);
         waitABit(1000);
-        message.sendKeys(invalidMessage);
+        message.sendKeys(userInfo.invalidMessage);
         waitABit(1000);
         sendMessage.click();
     }

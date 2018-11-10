@@ -77,7 +77,7 @@ public class TestLoginLogout extends PageObject {
     @Title("Empty field for username")
     public void emptyUsernameLogin() {
 
-        step.emptyUsernameField();
+        step.emptyUsernameField(password);
         waitABit(1000);
         driver.quit();
     }
@@ -86,7 +86,7 @@ public class TestLoginLogout extends PageObject {
     @Title("Empty field for password")
     public void emptyPasswordLogin() {
 
-        step.emptyPasswordField();
+        step.emptyPasswordField(username);
         waitABit(1000);
         driver.quit();
     }

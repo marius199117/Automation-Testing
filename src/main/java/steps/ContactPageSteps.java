@@ -1,6 +1,7 @@
 package steps;
 
 import common.PopUp;
+import common.UserInfo;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import pages.ContactPage;
@@ -35,8 +36,9 @@ public class ContactPageSteps extends ScenarioSteps {
     }
 
     @Step("Test 6: Contact form invalid credentials")
-    public void contactInvalidCredentials(String invalidEmail, String invalidName, String invalidMessage) {
-        sp.invalidCredentials(invalidEmail, invalidName, invalidMessage);
-    }
+    public void contactInvalidCredentials() {
 
+        UserInfo userInfo = new UserInfo().generateUser();
+        sp.invalidCredentials(userInfo);
+    }
 }

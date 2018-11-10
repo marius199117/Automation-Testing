@@ -46,6 +46,7 @@ public class LoginLogoutPage extends PageObject {
     public void successfulLogin(String user, String pass) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
+        waitABit(3000);
         username.sendKeys(user);
         waitABit(3000);
         password.sendKeys(pass);
@@ -70,21 +71,21 @@ public class LoginLogoutPage extends PageObject {
     }
 
     // Test 4: Empty field for username
-    public void emptyUsernameField() {
+    public void emptyUsernameField(String pass) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         waitABit(3000);
-        password.sendKeys("Marius91!");
+        password.sendKeys(pass);
         loginButton.click();
         waitABit(3000);
     }
 
     // Test 5: Empty field for password
-    public void emptyPasswordField() {
+    public void emptyPasswordField(String user) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
         waitABit(3000);
-        username.sendKeys("Marius91!");
+        username.sendKeys(user);
         loginButton.click();
         waitABit(3000);
     }
@@ -105,6 +106,7 @@ public class LoginLogoutPage extends PageObject {
     public void usernamePasswordSpaceAfterwards(String invalidUser, String invalidPas) {
         logIn.click();
         Assert.assertTrue("Login Button is not functional", logIn.isDisplayed());
+        waitABit(3000);
         username.sendKeys(invalidUser);
         waitABit(3000);
         password.sendKeys(invalidPas);
