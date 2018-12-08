@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 @UseTestDataFrom(value = "/urls.csv", separator = Constants.CSV_SEPARATOR)
 public class TestAboutUsPage extends PageObject {
 
-    @Managed(uniqueSession = true, driver = "Chrome")
+    @Managed(uniqueSession = true, driver = "Firefox")
     public WebDriver driver;
 
     @Steps
