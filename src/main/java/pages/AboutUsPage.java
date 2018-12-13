@@ -1,11 +1,11 @@
 package pages;
 
-import net.serenitybdd.core.pages.PageObject;
+import common.Helper;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AboutUsPage extends PageObject {
+public class AboutUsPage extends Helper {
 
     @FindBy(css = "a.nav-link[data-target*=\"#videoModal\"]")
     WebElement aboutUs;
@@ -22,31 +22,27 @@ public class AboutUsPage extends PageObject {
     @FindBy(xpath = "/html/body/div[4]/div/div/div[3]/button")
     WebElement selectCloseButton;
 
-
     // Test 1 : Select About Us and Select the video from the About Us section
     public void selectAboutUs() {
-        aboutUs.click();
-        Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
-        afterClick.click();
-        Assert.assertTrue("Video is not functional", afterVideoClick.isDisplayed());
-
+        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
+        clickAndAssert(afterClick, afterVideoClick, "Video is not functional");
     }
 
     // Test 2 : Select About Us and X button
     public void selectAboutUsXbutton() {
-        aboutUs.click();
+        click(aboutUs);
         Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
-        selectXButton.click();
-        selectXButton.click();
+        click(selectXButton);
+        click(selectXButton);
 
     }
 
     // Test 3 : Select About Us and Close button
     public void selectCloseAboutUs() {
-        aboutUs.click();
+        click(aboutUs);
         Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
-        selectCloseButton.click();
-        selectCloseButton.click();
+        click(selectCloseButton);
+        click(selectCloseButton);
 
     }
 }
