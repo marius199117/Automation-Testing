@@ -33,8 +33,6 @@ public class AboutUsPage extends Helper {
         click(aboutUs);
         Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
         click(selectXButton);
-        click(selectXButton);
-
     }
 
     // Test 3 : Select About Us and Close button
@@ -42,8 +40,6 @@ public class AboutUsPage extends Helper {
         click(aboutUs);
         Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
         click(selectCloseButton);
-        click(selectCloseButton);
-
     }
 }
 
