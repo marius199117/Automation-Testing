@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="TestHomePage" skipped="0" tests="1" time="0.99" timestamp="2018-08-213 10:05:45"><testcase classname="TestHomePage" name="Home button functionality"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-pages.HomePage.setHomeFunctionality(HomePage.java:15)&#13;
-steps.HomePageSteps.homeButtonFunctionality(HomePageSteps.java:14)&#13;
-TestHomePage.firstPageElements(TestHomePage.java:42)&#13;
-</system-err></testcase></testsuite>
