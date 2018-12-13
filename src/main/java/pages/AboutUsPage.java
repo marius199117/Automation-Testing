@@ -24,22 +24,22 @@ public class AboutUsPage extends Helper {
 
     // Test 1 : Select About Us and Select the video from the About Us section
     public void selectAboutUs() {
-        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
-        clickAndAssert(afterClick, afterVideoClick, "Video is not functional");
+//        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
+//        clickAndAssert(afterClick, afterVideoClick, "Video is not functional");
     }
 
-    // Test 2 : Select About Us and X button
-    public void selectAboutUsXbutton() {
-        click(aboutUs);
-        Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
-        click(selectXButton);
-    }
-
-    // Test 3 : Select About Us and Close button
-    public void selectCloseAboutUs() {
-        click(aboutUs);
-        Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
-        click(selectCloseButton);
-    }
+//    // Test 2 : Select About Us and X button
+//    public void selectAboutUsXbutton() {
+//        click(aboutUs);
+//        Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
+//        click(selectXButton);
+//    }
+//
+//    // Test 3 : Select About Us and Close button
+//    public void selectCloseAboutUs() {
+//        click(aboutUs);
+//        Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
+//        click(selectCloseButton);
+//    }
 }
 

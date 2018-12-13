@@ -57,7 +57,7 @@ public class TestAboutUsPage extends PageObject {
     @Title("About Us X button functionality")
     public void aboutUsXButtonFunctionality() {
 
-        step.aboutUsXbutton();
+//        step.aboutUsXbutton();
         waitABit(2000);
         driver.quit();
     }
@@ -66,7 +66,7 @@ public class TestAboutUsPage extends PageObject {
     @Title("About Us Close button functionality")
     public void aboutUsCloseButtonFunctionality() {
 
-        step.aboutUsClosebutton();
+//        step.aboutUsClosebutton();
         waitABit(1000);
         driver.quit();
     }
