@@ -44,30 +44,30 @@ public class TestAboutUsPage extends PageObject {
 
     }
 
-    @Test
-    @Title("About Us button functionality")
-    public void aboutUsFlowFunctionality() {
-
-        step.aboutUsButtonFunctionality();
-
-
-    }
+//    @Test
+//    @Title("About Us button functionality")
+//    public void aboutUsFlowFunctionality() {
+//
+//        step.aboutUsButtonFunctionality();
+//
+//
+//    }
 
     @Test
     @Title("About Us X button functionality")
     public void aboutUsXButtonFunctionality() {
 
-//        step.aboutUsXbutton();
+        step.aboutUsXbutton();
         waitABit(2000);
         driver.quit();
     }
 
-//    @Test
-//    @Title("About Us Close button functionality")
-//    public void aboutUsCloseButtonFunctionality() {
-//
-////        step.aboutUsClosebutton();
-//        waitABit(1000);
-//        driver.quit();
-//    }
+    @Test
+    @Title("About Us Close button functionality")
+    public void aboutUsCloseButtonFunctionality() {
+
+        step.aboutUsClosebutton();
+        waitABit(1000);
+        driver.quit();
+    }
 }
