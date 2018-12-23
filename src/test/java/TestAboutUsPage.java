@@ -62,12 +62,12 @@ public class TestAboutUsPage extends PageObject {
         driver.quit();
     }
 
-    @Test
-    @Title("About Us Close button functionality")
-    public void aboutUsCloseButtonFunctionality() {
-
-//        step.aboutUsClosebutton();
-        waitABit(1000);
-        driver.quit();
-    }
+//    @Test
+//    @Title("About Us Close button functionality")
+//    public void aboutUsCloseButtonFunctionality() {
+//
+////        step.aboutUsClosebutton();
+//        waitABit(1000);
+//        driver.quit();
+//    }
 }
