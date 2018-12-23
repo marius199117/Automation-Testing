@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09bc72ef-b678-41e9-be11-ffb277be104b" name="Default" comment="- Update the chrome driver.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" afterDir="false" />
-    </list>
+    <list default="true" id="09bc72ef-b678-41e9-be11-ffb277be104b" name="Default" comment="- Update the chrome driver." />
     <ignored path="Sample.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -275,7 +273,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-15" />
     <option name="y" value="20" />
     <option name="width" value="1940" />
@@ -409,7 +407,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="android.sdk.path" value="C:/adt-bundle-windows-x86_64-20140702/sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545578233553" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545578681356" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Automation project" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -725,9 +723,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAboutUsPage - 2018.12.13 at 18h 59m 30s.xml">
-      <configuration name="TestAboutUsPage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestAboutUsPage - 2018.12.13 at 19h 22m 31s.xml">
       <configuration name="TestAboutUsPage" configurationId="JUnit" />
     </history-entry>
@@ -755,12 +750,15 @@
     <history-entry file="TestAboutUsPage - 2018.12.23 at 17h 07m 04s.xml">
       <configuration name="TestAboutUsPage" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestAboutUsPage - 2018.12.23 at 17h 17m 48s.xml">
+      <configuration name="TestAboutUsPage" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3328859" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3328859" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -769,7 +767,7 @@
       <window_info id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3460993" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3460993" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
