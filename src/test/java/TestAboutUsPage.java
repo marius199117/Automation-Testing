@@ -44,14 +44,14 @@ public class TestAboutUsPage extends PageObject {
 
     }
 
-//    @Test
-//    @Title("About Us button functionality")
-//    public void aboutUsFlowFunctionality() {
-//
-//        step.aboutUsButtonFunctionality();
-//
-//
-//    }
+    @Test
+    @Title("About Us button functionality")
+    public void aboutUsFlowFunctionality() {
+
+        step.aboutUsButtonFunctionality();
+
+
+    }
 
     @Test
     @Title("About Us X button functionality")
