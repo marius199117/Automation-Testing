@@ -26,18 +26,21 @@ public class AboutUsPage extends Helper {
     public void selectAboutUs() {
         clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
         clickAndAssert(afterClick, afterVideoClick, "Video is not functional");
+        waitABit(3000);
     }
 
     //    // Test 2 : Select About Us and X button
     public void selectAboutUsXbutton() {
         clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
         click(selectXButton);
+        waitABit(3000);
     }
 
     // Test 3 : Select About Us and Close button
     public void selectCloseAboutUs() {
         clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
         click(selectCloseButton);
+        waitABit(3000);
     }
 }
 
