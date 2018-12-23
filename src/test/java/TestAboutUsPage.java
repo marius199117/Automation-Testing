@@ -9,10 +9,15 @@ import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import common.Application;
 import common.Constants;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import steps.AboutUsPageSteps;
 
 import java.util.concurrent.TimeUnit;
@@ -42,32 +47,38 @@ public class TestAboutUsPage extends PageObject {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+
     }
 
     @Test
     @Title("About Us button functionality")
     public void aboutUsFlowFunctionality() {
 
-        step.aboutUsButtonFunctionality();
+        {
+            Actions act = new Actions(driver);
+            act.moveToElement(driver.findElement(By.cssSelector("a.nav-link[data-target*=\"#videoModal\"]"))).click().build().perform();
+            waitABit(3000);
 
 
-    }
+        }
 
-    @Test
-    @Title("About Us X button functionality")
-    public void aboutUsXButtonFunctionality() {
-
-        step.aboutUsXbutton();
-        waitABit(2000);
-        driver.quit();
-    }
-
-    @Test
-    @Title("About Us Close button functionality")
-    public void aboutUsCloseButtonFunctionality() {
-
-        step.aboutUsClosebutton();
-        waitABit(1000);
-        driver.quit();
+//    @Test
+//    @Title("About Us X button functionality")
+//    public void aboutUsXButtonFunctionality() {
+//
+//        step.aboutUsXbutton();
+//        waitABit(2000);
+//        driver.quit();
+//    }
+//
+//    @Test
+//    @Title("About Us Close button functionality")
+//    public void aboutUsCloseButtonFunctionality() {
+//
+//        step.aboutUsClosebutton();
+//        waitABit(1000);
+//        driver.quit();
+//    }
     }
 }

@@ -17,4 +17,6 @@ public class Helper extends PageObject {
         waitFor(expectedElement).waitUntilClickable();
         Assert.assertTrue(message, expectedElement.isDisplayed());
     }
+
+
 }
