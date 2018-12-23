@@ -1,26 +1,11 @@
 package pages;
 
-import common.Helper;
-import common.Helper2;
-import gherkin.lexer.Pa;
-import net.serenitybdd.core.pages.PageObject;
-import net.thucydides.core.annotations.Managed;
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import net.thucydides.core.steps.ScenarioSteps;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.server.handler.ClickElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AboutUsPage extends Helper2 {
 
-    WebDriver driver;
+public class AboutUsPage  {
 
     @FindBy(css = "a.nav-link[data-target*=\"#videoModal\"]")
     WebElement aboutUs;
@@ -39,8 +24,13 @@ public class AboutUsPage extends Helper2 {
 
     // Test 1 : Select About Us and Select the video from the About Us section
     public void selectAboutUs() {
-        Helper2.clickByCss(driver,"a.nav-link[data-target*=\"#videoModal\"]");
 
+//        Actions act = new Actions(driver);
+//        act.moveToElement(driver.findElement(By.cssSelector("a.nav-link[data-target*=\"#videoModal\"]"))).click().build().perform();
+//        waitABit(3000);
+//        act.moveToElement(driver.findElement(By.id("example-video_html5_api"))).click().build().perform();
+//        waitABit(3000);
+//        driver.quit();
 
 
 
@@ -70,4 +60,5 @@ public class AboutUsPage extends Helper2 {
 //        click(selectCloseButton);
 //    }
 }
+
 
