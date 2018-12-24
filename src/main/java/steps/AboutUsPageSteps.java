@@ -15,11 +15,11 @@ public class AboutUsPageSteps extends ScenarioSteps {
 
     @Step("Test 2: Select Contact and afterwards Select X button")
     public void aboutUsXbutton() {
-//        sp.selectAboutUsXbutton();
+        sp.selectAboutUsXbutton();
     }
 
     @Step("Test 3: Select Contact and afterwards Select Close button")
     public void aboutUsClosebutton() {
-//        sp.selectCloseAboutUs();
+        sp.selectCloseAboutUs();
     }
 }
