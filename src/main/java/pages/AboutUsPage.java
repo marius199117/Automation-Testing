@@ -1,12 +1,16 @@
 package pages;
 
 
+import com.sun.deploy.util.SessionState;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
+import org.assertj.core.api.SoftAssertions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+
+import static org.mockito.BDDMockito.then;
 
 public class AboutUsPage extends PageObject {
 
@@ -43,8 +47,9 @@ public class AboutUsPage extends PageObject {
     public void selectAboutUs() {
 
         Actions act = new Actions(this.getDriver());
+        SoftAssertions softAssertion = new SoftAssertions();
         act.moveToElement(this.getDriver().findElement(aboutUs())).click().build().perform();
-        waitABit(3000);
+        Assert.assertTrue("Fail", afterClick.isDisplayed());
         act.moveToElement(this.getDriver().findElement(afterClick())).click().build().perform();
         waitABit(3000);
 
