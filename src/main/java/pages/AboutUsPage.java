@@ -34,12 +34,10 @@ public class AboutUsPage extends PageObject {
     public void selectAboutUs() {
 
         Actions act = new Actions(this.getDriver());
-        act.moveToElement(this.getDriver().findElement(By.cssSelector("a.nav-link[data-target*=\"#videoModal\"]"))).click().build().perform();
+        act.moveToElement(this.getDriver().findElement(aboutUs())).click().build().perform();
         waitABit(3000);
-        Assert.assertTrue("About Us button is not functional", afterClick.isDisplayed());
-        act.moveToElement(this.getDriver().findElement(By.className("vjs-poster"))).click().build().perform();
+        act.moveToElement(this.getDriver().findElement(afterClick())).click().build().perform();
         waitABit(3000);
-        Assert.assertTrue("Video is not functional", afterVideoClick.isDisplayed());
 
 //        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
 //        waitABit(2000);
