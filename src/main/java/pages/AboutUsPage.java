@@ -30,6 +30,15 @@ public class AboutUsPage extends PageObject {
         return By.className("vjs-poster");
     }
 
+    public static By xButton() {
+        return By.xpath("/html/body/div[4]/div/div/div[1]/button");
+    }
+
+    public static By closeButton() {
+        return By.xpath("/html/body/div[4]/div/div/div[3]/button");
+    }
+
+
     // Test 1 : Select About Us and Select the video from the About Us section
     public void selectAboutUs() {
 
@@ -48,9 +57,9 @@ public class AboutUsPage extends PageObject {
     public void selectAboutUsXbutton() {
 
         Actions act = new Actions(this.getDriver());
-        act.moveToElement(this.getDriver().findElement(By.cssSelector("a.nav-link[data-target*=\"#videoModal\"]"))).click().build().perform();
+        act.moveToElement(this.getDriver().findElement(aboutUs())).click().build().perform();
         waitABit(3000);
-        act.moveToElement(this.getDriver().findElement(By.xpath("/html/body/div[4]/div/div/div[1]/button"))).click().build().perform();
+        act.moveToElement(this.getDriver().findElement(xButton())).click().build().perform();
         waitABit(3000);
 //        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
 //        click(selectXButton);
@@ -60,9 +69,9 @@ public class AboutUsPage extends PageObject {
     // Test 3 : Select About Us and Close button
     public void selectCloseAboutUs() {
         Actions act = new Actions(this.getDriver());
-        act.moveToElement(this.getDriver().findElement(By.cssSelector("a.nav-link[data-target*=\"#videoModal\"]"))).click().build().perform();
+        act.moveToElement(this.getDriver().findElement(aboutUs())).click().build().perform();
         waitABit(3000);
-        act.moveToElement(this.getDriver().findElement(By.xpath("/html/body/div[4]/div/div/div[3]/button"))).click().build().perform();
+        act.moveToElement(this.getDriver().findElement(closeButton())).click().build().perform();
         waitABit(3000);
 //        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
 //        click(selectCloseButton);
