@@ -58,7 +58,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-12-2018 20:43</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-12-2018 13:44</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -91,9 +91,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-3x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                    <span class="error-color">
+                                    <span class="success-color">
                                     About Us X Button Functionality
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -110,7 +110,7 @@
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario"></div>
+        <div class="scenario">Test 2: Select Contact and afterwards Select X button</div>
 
     </div>
 
@@ -133,18 +133,18 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-ERROR"><a href="#0">1</a></td>
-                            <td class="test-ERROR"><a href="#0">https://www.demoblaze.com/</a>
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a href="#0">https://www.demoblaze.com/</a>
                             </td>
-                            <td class="test-ERROR"><a href="#0">Marius91!</a>
+                            <td class="test-SUCCESS"><a href="#0">Marius91!</a>
                             </td>
-                            <td class="test-ERROR"><a href="#0">Marius91!</a>
+                            <td class="test-SUCCESS"><a href="#0">Marius91!</a>
                             </td>
-                            <td class="test-ERROR"><a href="#0">marius@yahoo.com</a>
+                            <td class="test-SUCCESS"><a href="#0">marius@yahoo.com</a>
                             </td>
-                            <td class="test-ERROR"><a href="#0">Marius</a>
+                            <td class="test-SUCCESS"><a href="#0">Marius</a>
                             </td>
-                            <td class="test-ERROR"><a href="#0">Salut</a>
+                            <td class="test-SUCCESS"><a href="#0">Salut</a>
                             </td>
                     </tr>
                 </tbody>
@@ -158,129 +158,75 @@
                     <th width="65">                        &nbsp;
                     </th>
 
-                    <th width="%" class="step-description-wide-column greentext">
+                    <th width="%" class="step-description-column greentext">
                         Steps
                     </th>
+                    <th width="120" class="greentext">Screenshot</th>
                     <th width="100" class="greentext">Outcome</th>
                     <th width="75" class="greentext">Duration</th>
                 </tr>
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="0"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
                     <td>
                         <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
                             <span class="top-level-step">About Us X button functionality</span>
+                            </a>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">5.59s</span></td>
-                </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Illegal argument exception: Must provide a location for a move action.'>
-                                <pre>Illegal argument exception: Must provide a location for a move action.</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-1">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-1" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.IllegalArgumentException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>Must provide a location for a move action.</h5>
-                                TestAboutUsPage.aboutUsXButtonFunctionality(TestAboutUsPage.java
-                                    :69) <br>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <td width="100" class="SUCCESS-text">
                         </td>
-                    </tr>
-                <tr class="test-FAILURE">
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">7.45s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="1"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Failure</span>
+                            <span class="nested-group-step">Test 2: Select Contact and afterwards Select X button</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
-                </tr>
-                    <tr class="test-FAILURE">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Assertion error: Must provide a location for a move action.'>
-                                <pre>Assertion error: Must provide a location for a move action.</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-0">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-0" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                java.lang.AssertionError
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>Must provide a location for a move action.</h5>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="716812577f1f07f0541a79c692aa4e6e1e747407ca2e62e9ffca632ee15bcc82_screenshots.html#screenshots?screenshot=0">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="05b194fdfda476f18412973eb2ede0a85ad4921ac841dc15db5cc98cefafc267.png"
+                                         href="05b194fdfda476f18412973eb2ede0a85ad4921ac841dc15db5cc98cefafc267.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-                    </tr>
-                <tr class="test-ERROR">
-                    <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>5.59s</em></span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">7.45s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td colspan="3"></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>7.45s</em></span></td>
                 </tr>
 
             </table>

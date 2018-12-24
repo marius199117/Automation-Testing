@@ -2,7 +2,6 @@ package steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.openqa.selenium.WebDriver;
 import pages.AboutUsPage;
 
 public class AboutUsPageSteps extends ScenarioSteps {
@@ -14,13 +13,13 @@ public class AboutUsPageSteps extends ScenarioSteps {
         sp.selectAboutUs();
     }
 
-//    @Step("Test 2: Select Contact and afterwards Select X button")
-//    public void aboutUsXbutton() {
-//        sp.selectAboutUsXbutton();
-//    }
-//
-//    @Step("Test 3: Select Contact and afterwards Select Close button")
-//    public void aboutUsClosebutton() {
-//        sp.selectCloseAboutUs();
-//    }
+    @Step("Test 2: Select Contact and afterwards Select X button")
+    public void aboutUsXbutton() {
+        sp.selectAboutUsXbutton();
+    }
+
+    @Step("Test 3: Select Contact and afterwards Select Close button")
+    public void aboutUsClosebutton() {
+        sp.selectCloseAboutUs();
+    }
 }

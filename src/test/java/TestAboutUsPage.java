@@ -6,6 +6,7 @@ import net.thucydides.core.annotations.Story;
 import net.thucydides.core.annotations.Title;
 import net.thucydides.junit.annotations.UseTestDataFrom;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -50,45 +51,26 @@ public class TestAboutUsPage extends PageObject {
 
     }
 
+
     @Test
     @Title("About Us button functionality")
     public void aboutUsFlowFunctionality() {
 
-        Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.cssSelector("a.nav-link[data-target*=\"#videoModal\"]"))).click().build().perform();
-        waitABit(3000);
-        act.moveToElement(driver.findElement(By.id("example-video_html5_api"))).click().build().perform();
-        waitABit(3000);
+        step.aboutUsButtonFunctionality();
         driver.quit();
     }
 
     @Test
     @Title("About Us X button functionality")
     public void aboutUsXButtonFunctionality() {
-        Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.cssSelector("a.nav-link[data-target*=\"#videoModal\"]"))).click().build().perform();
-        waitABit(3000);
-        act.moveToElement(driver.findElement(By.xpath("/html/body/div[4]/div/div/div[1]/button"))).click().build().perform();
-        waitABit(3000);
+        step.aboutUsXbutton();
         driver.quit();
-//
-//        step.aboutUsXbutton();
-//        waitABit(2000);
-//        driver.quit();
     }
 
     @Test
     @Title("About Us Close button functionality")
     public void aboutUsCloseButtonFunctionality() {
-        Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.cssSelector("a.nav-link[data-target*=\"#videoModal\"]"))).click().build().perform();
-        waitABit(3000);
-        act.moveToElement(driver.findElement(By.xpath("/html/body/div[4]/div/div/div[3]/button"))).click().build().perform();
-        waitABit(3000);
+        step.aboutUsClosebutton();
         driver.quit();
-
-//        step.aboutUsClosebutton();
-//        waitABit(1000);
-//        driver.quit();
     }
-    }
+}
