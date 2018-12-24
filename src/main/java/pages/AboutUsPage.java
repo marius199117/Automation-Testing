@@ -47,7 +47,7 @@ public class AboutUsPage extends Helper {
         Actions act = new Actions(this.getDriver());
         SoftAssertions softAssertion = new SoftAssertions();
         act.moveToElement(this.getDriver().findElement(aboutUs())).click().build().perform();
-        Assert.assertTrue("Fail", afterClick.isDisplayed());
+        waitABit(3000);
         act.moveToElement(this.getDriver().findElement(afterClick())).click().build().perform();
         waitABit(3000);
 

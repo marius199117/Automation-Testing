@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bc72ef-b678-41e9-be11-ffb277be104b" name="Default" comment="- Update the chrome driver.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" afterDir="false" />
     </list>
     <ignored path="Sample.iws" />
@@ -65,7 +64,7 @@
         <counts>
           <entry key="csv" value="416" />
           <entry key="dummy" value="5" />
-          <entry key="java" value="6291" />
+          <entry key="java" value="6299" />
           <entry key="properties" value="1" />
           <entry key="txt" value="115" />
         </counts>
@@ -73,7 +72,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="193" />
-          <entry key="JAVA" value="6291" />
+          <entry key="JAVA" value="6299" />
           <entry key="PLAIN_TEXT" value="343" />
           <entry key="Properties" value="1" />
         </counts>
@@ -105,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="470">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
               <folding>
                 <element signature="e#735#736#0" expanded="true" />
                 <element signature="e#816#817#0" expanded="true" />
@@ -1229,8 +1228,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="470">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
           <folding>
             <element signature="e#735#736#0" expanded="true" />
             <element signature="e#816#817#0" expanded="true" />
