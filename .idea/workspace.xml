@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bc72ef-b678-41e9-be11-ffb277be104b" name="Default" comment="- Update the chrome driver.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" afterDir="false" />
     </list>
     <ignored path="Sample.iws" />
@@ -25,16 +26,16 @@
     <session id="152687430">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="7" />
+          <entry key="project.open.time.8" value="8" />
           <entry key="project.open.time.9" value="10" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,7 +65,7 @@
         <counts>
           <entry key="csv" value="416" />
           <entry key="dummy" value="5" />
-          <entry key="java" value="6364" />
+          <entry key="java" value="6371" />
           <entry key="properties" value="1" />
           <entry key="txt" value="115" />
         </counts>
@@ -72,7 +73,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="193" />
-          <entry key="JAVA" value="6364" />
+          <entry key="JAVA" value="6371" />
           <entry key="PLAIN_TEXT" value="343" />
           <entry key="Properties" value="1" />
         </counts>
@@ -87,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAboutUsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
+            <state relative-caret-position="867">
               <caret line="68" selection-start-line="68" selection-end-line="68" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -100,18 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
-              <folding>
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#936#937#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#1122#1123#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -146,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/steps/AboutUsPageSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="272">
               <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -163,7 +154,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="1581">
               <caret line="93" column="53" selection-start-line="93" selection-start-column="53" selection-end-line="93" selection-end-column="53" />
             </state>
           </provider>
@@ -302,6 +293,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Local Unit Tests'; set:test:*..*; class com.android.tools.idea.testartifacts.scopes.TestArtifactCustomScopeProvider$UnitTestsScope">
+          <expand>
+            <path>
+              <item name="Automation project 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Sample" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Automation project 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Sample" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Automation project 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Sample" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Automation project 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Sample" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -313,7 +334,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -416,35 +436,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Local Unit Tests'; set:test:*..*; class com.android.tools.idea.testartifacts.scopes.TestArtifactCustomScopeProvider$UnitTestsScope">
-          <expand>
-            <path>
-              <item name="Automation project 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Sample" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="Automation project 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Sample" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Automation project 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Sample" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Automation project 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Sample" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,7 +446,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="android.sdk.path" value="C:/adt-bundle-windows-x86_64-20140702/sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545660927621" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545660945207" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Automation project" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -771,9 +762,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestHomePage - 2018.12.13 at 18h 23m 22s.xml">
-      <configuration name="TestHomePage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestAboutUsPage_aboutUsXButtonFunctionality - 2018.12.13 at 18h 52m 09s.xml">
       <configuration name="TestAboutUsPage.aboutUsXButtonFunctionality" configurationId="JUnit" />
     </history-entry>
@@ -801,12 +789,15 @@
     <history-entry file="TestContactPage - 2018.12.14 at 19h 14m 25s.xml">
       <configuration name="TestContactPage" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestAboutUsPage - 2018.12.24 at 16h 15m 37s.xml">
+      <configuration name="TestAboutUsPage" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.357047" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36241612" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -982,14 +973,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Resources/urls.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="2" selection-end-line="1" selection-end-column="64" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1159,6 +1150,17 @@
     <entry file="file://$PROJECT_DIR$/target/test-classes/urls.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAboutUsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="68" selection-start-line="68" selection-end-line="68" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1545660029245" expanded="true" signature="1562:1592" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/ContactPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1170,6 +1172,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/steps/AboutUsPageSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="53" selection-start-line="93" selection-start-column="53" selection-end-line="93" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1203,60 +1234,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="93" column="53" selection-start-line="93" selection-start-column="53" selection-end-line="93" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/Helper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/steps/AboutUsPageSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAboutUsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="68" selection-start-line="68" selection-end-line="68" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1545660029245" expanded="true" signature="1562:1592" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
-          <folding>
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
         </state>
       </provider>
     </entry>
