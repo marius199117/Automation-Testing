@@ -47,9 +47,9 @@ public class AboutUsPage extends Helper {
         Actions act = new Actions(this.getDriver());
         SoftAssertions softAssertion = new SoftAssertions();
         act.moveToElement(this.getDriver().findElement(aboutUs())).click().build().perform();
-        act.moveToElement(this.getDriver().findElement(afterClick()));
         Assert.assertTrue("Fail",afterClick.isDisplayed());
         act.moveToElement(this.getDriver().findElement(afterClick())).click().build().perform();
+        Assert.assertTrue("No",afterVideoClick.isDisplayed() );
         waitABit(3000);
 
 //        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");

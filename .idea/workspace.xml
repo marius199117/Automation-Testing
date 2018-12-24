@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="09bc72ef-b678-41e9-be11-ffb277be104b" name="Default" comment="- Update the chrome driver.">
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/steps/AboutUsPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/steps/AboutUsPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestAboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAboutUsPage.java" afterDir="false" />
     </list>
     <ignored path="Sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,7 +64,7 @@
         <counts>
           <entry key="csv" value="416" />
           <entry key="dummy" value="5" />
-          <entry key="java" value="6338" />
+          <entry key="java" value="6364" />
           <entry key="properties" value="1" />
           <entry key="txt" value="115" />
         </counts>
@@ -74,7 +72,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="193" />
-          <entry key="JAVA" value="6338" />
+          <entry key="JAVA" value="6364" />
           <entry key="PLAIN_TEXT" value="343" />
           <entry key="Properties" value="1" />
         </counts>
@@ -102,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+            <state relative-caret-position="204">
+              <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
               <folding>
                 <element signature="e#735#736#0" expanded="true" />
                 <element signature="e#816#817#0" expanded="true" />
@@ -457,7 +455,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="android.sdk.path" value="C:/adt-bundle-windows-x86_64-20140702/sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545660335466" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545660927621" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Automation project" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -486,7 +484,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestContactPage">
+  <component name="RunManager" selected="JUnit.TestAboutUsPage">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -722,8 +720,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestContactPage" />
         <item itemvalue="JUnit.TestAboutUsPage" />
+        <item itemvalue="JUnit.TestContactPage" />
         <item itemvalue="JUnit.TestAboutUsPage.aboutUsXButtonFunctionality" />
         <item itemvalue="JUnit.TestHomePage" />
         <item itemvalue="JUnit.All in Sample" />
@@ -806,6 +804,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.357047" />
       <window_info id="Structure" order="1" weight="0.24966443" />
@@ -1246,8 +1245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
           <folding>
             <element signature="e#735#736#0" expanded="true" />
             <element signature="e#816#817#0" expanded="true" />
