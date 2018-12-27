@@ -21,4 +21,37 @@ public class Helper2 extends PageObject {
        act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
        waitABit(time);
    }
+
+    public void clickAndSendKeys (WebDriver ldriver, By element, String message, int time) {
+        Actions act = new Actions(ldriver);
+        act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
+        waitABit(time);
+        act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
+        waitABit(time);
+    }
+
+    public void clickAndSendKeysAndSelectButton (WebDriver ldriver, By element, String message, By element2, String message2, int time, By signUpButton) {
+        Actions act = new Actions(ldriver);
+        act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
+        waitABit(time);
+        act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
+        waitABit(time);
+        act.moveToElement(ldriver.findElement((By) element2)).click().build().perform();
+        waitABit(time);
+        act.moveToElement(ldriver.findElement((By) element2)).sendKeys(message2).build().perform();
+        waitABit(time);
+        act.moveToElement(ldriver.findElement((By) signUpButton)).click().build().perform();
+        waitABit(time);
+    }
+
+    public void clickAndSendKeysPasswordOrUsername (WebDriver ldriver, By element, String message, int time, By signUpButton) {
+        Actions act = new Actions(ldriver);
+        act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
+        waitABit(time);
+        act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
+        waitABit(time);
+        act.moveToElement(ldriver.findElement((By) signUpButton)).click().build().perform();
+        waitABit(time);
+    }
 }
+
