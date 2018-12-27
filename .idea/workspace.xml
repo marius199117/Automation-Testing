@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bc72ef-b678-41e9-be11-ffb277be104b" name="Default" comment="- Update the chrome driver.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Helper2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Helper2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" afterDir="false" />
     </list>
     <ignored path="Sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +44,7 @@
           <entry key="csv" value="19" />
           <entry key="exe" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="424" />
+          <entry key="java" value="433" />
           <entry key="md" value="2" />
           <entry key="properties" value="4" />
           <entry key="xml" value="10" />
@@ -58,7 +55,7 @@
           <entry key="CLASS" value="2" />
           <entry key="CSV" value="6" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="424" />
+          <entry key="JAVA" value="433" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="Properties" value="4" />
           <entry key="XML" value="10" />
@@ -68,7 +65,7 @@
         <counts>
           <entry key="csv" value="416" />
           <entry key="dummy" value="5" />
-          <entry key="java" value="7686" />
+          <entry key="java" value="7740" />
           <entry key="properties" value="1" />
           <entry key="txt" value="115" />
         </counts>
@@ -76,7 +73,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="193" />
-          <entry key="JAVA" value="7686" />
+          <entry key="JAVA" value="7740" />
           <entry key="PLAIN_TEXT" value="343" />
           <entry key="Properties" value="1" />
         </counts>
@@ -88,20 +85,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/ContactPage.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="39" column="88" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="88" />
+            <state relative-caret-position="634">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="true" />
+                <element signature="e#967#968#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/FirstPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestAboutUsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+            <state relative-caret-position="391">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1545660029245" expanded="true" signature="1562:1592" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestSignUp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1014">
+              <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -109,42 +129,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/common/Helper2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="204">
+              <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1-sources.jar!/org/openqa/selenium/By.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/FirstPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/common/Helper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1545914365810" expanded="true" signature="531:558" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestContactPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="646">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -158,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/SignUpPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1145">
-              <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+            <state relative-caret-position="243">
+              <caret line="140" column="79" lean-forward="true" selection-start-line="140" selection-start-column="79" selection-end-line="140" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#723#724#0" expanded="true" />
@@ -181,19 +176,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/common/UserInfo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/RandomString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="476">
+              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1-sources.jar!/org/openqa/selenium/WebDriver.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/PopUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+            <state relative-caret-position="221">
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -270,10 +274,10 @@
         <option value="$PROJECT_DIR$/src/main/java/pages/ContactPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/steps/AboutUsPageSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestAboutUsPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/Helper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/common/Helper2.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/Helper2.java" />
       </list>
     </option>
   </component>
@@ -449,7 +453,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="android.sdk.path" value="C:/adt-bundle-windows-x86_64-20140702/sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545922384445" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545923500958" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Automation project" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -478,7 +482,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestAboutUsPage">
+  <component name="RunManager" selected="JUnit.TestSignUp">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -600,15 +604,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in Sample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sample" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestAboutUsPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sample" />
       <option name="PACKAGE_NAME" value="" />
@@ -643,6 +638,15 @@
       <module name="Sample" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestHomePage" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSignUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sample" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSignUp" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -709,16 +713,16 @@
       <item itemvalue="JUnit.TestContactPage" />
       <item itemvalue="JUnit.TestAboutUsPage" />
       <item itemvalue="JUnit.TestAboutUsPage.aboutUsXButtonFunctionality" />
-      <item itemvalue="JUnit.All in Sample" />
       <item itemvalue="JUnit.TestHomePage" />
+      <item itemvalue="JUnit.TestSignUp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSignUp" />
         <item itemvalue="JUnit.TestAboutUsPage" />
         <item itemvalue="JUnit.TestContactPage" />
         <item itemvalue="JUnit.TestAboutUsPage.aboutUsXButtonFunctionality" />
         <item itemvalue="JUnit.TestHomePage" />
-        <item itemvalue="JUnit.All in Sample" />
       </list>
     </recent_temporary>
   </component>
@@ -765,12 +769,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAboutUsPage_aboutUsXButtonFunctionality - 2018.12.13 at 18h 52m 09s.xml">
-      <configuration name="TestAboutUsPage.aboutUsXButtonFunctionality" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestAboutUsPage - 2018.12.13 at 18h 54m 19s.xml">
-      <configuration name="TestAboutUsPage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestAboutUsPage - 2018.12.13 at 18h 59m 30s.xml">
       <configuration name="TestAboutUsPage" configurationId="JUnit" />
     </history-entry>
@@ -795,6 +793,12 @@
     <history-entry file="TestAboutUsPage - 2018.12.24 at 16h 15m 37s.xml">
       <configuration name="TestAboutUsPage" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestAboutUsPage - 2018.12.27 at 17h 10m 15s.xml">
+      <configuration name="TestAboutUsPage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSignUp - 2018.12.27 at 17h 11m 58s.xml">
+      <configuration name="TestSignUp" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -809,7 +813,7 @@
       <window_info id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3460993" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3460993" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1020,31 +1024,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestSignUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/RandomString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serenity.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/PopUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1082,20 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/PlaceOrderPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginLogoutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -1119,17 +1088,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/target/test-classes/urls.csv">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAboutUsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1545660029245" expanded="true" signature="1562:1592" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/steps/AboutUsPageSteps.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1160,28 +1118,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="52" />
-          <folding>
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/ContactPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="39" column="88" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/FirstPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1202,24 +1142,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1-sources.jar!/org/openqa/selenium/WebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1234,17 +1160,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/Helper2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/PlaceOrderPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="170">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/LoginLogoutPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/FirstPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAboutUsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1545660029245" expanded="true" signature="1562:1592" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestSignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1014">
+          <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/RandomString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/PopUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/SignUpPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1145">
-          <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+        <state relative-caret-position="243">
+          <caret line="140" column="79" lean-forward="true" selection-start-line="140" selection-start-column="79" selection-end-line="140" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#723#724#0" expanded="true" />
@@ -1257,6 +1243,30 @@
             <element signature="e#1059#1060#0" expanded="true" />
             <element signature="e#1052#1053#0" expanded="true" />
             <element signature="e#1128#1129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/Helper2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,7 @@
 package pages;
 
 import common.Helper;
+import common.Helper2;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -8,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
-public class AboutUsPage extends Helper {
+public class AboutUsPage extends Helper2 {
 
     @FindBy(css = "a.nav-link[data-target*=\"#videoModal\"]")
     WebElement aboutUs;
@@ -43,12 +44,8 @@ public class AboutUsPage extends Helper {
 
     // Test 1 : Select About Us and Select the video from the About Us section
     public void selectAboutUs() {
-
-        Actions act = new Actions(this.getDriver());
-        act.moveToElement(this.getDriver().findElement(aboutUs())).click().build().perform();
-        waitABit(3000);
-        act.moveToElement(this.getDriver().findElement(afterClick())).click().build().perform();
-        waitABit(3000);
+        clickElement(this.getDriver(), aboutUs(), 2000);
+        clickElement(this.getDriver(), afterClick(), 2000);
 
 //        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
 //        waitABit(2000);
@@ -57,12 +54,9 @@ public class AboutUsPage extends Helper {
 
     // Test 2 : Select About Us and X button
     public void selectAboutUsXbutton() {
+        clickElement(this.getDriver(), aboutUs(), 2000);
+        clickElement(this.getDriver(), xButton(), 2000);
 
-        Actions act = new Actions(this.getDriver());
-        act.moveToElement(this.getDriver().findElement(aboutUs())).click().build().perform();
-        waitABit(3000);
-        act.moveToElement(this.getDriver().findElement(xButton())).click().build().perform();
-        waitABit(3000);
 //        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
 //        click(selectXButton);
     }
@@ -70,11 +64,9 @@ public class AboutUsPage extends Helper {
     //
     // Test 3 : Select About Us and Close button
     public void selectCloseAboutUs() {
-        Actions act = new Actions(this.getDriver());
-        act.moveToElement(this.getDriver().findElement(aboutUs())).click().build().perform();
-        waitABit(3000);
-        act.moveToElement(this.getDriver().findElement(closeButton())).click().build().perform();
-        waitABit(3000);
+        clickElement(this.getDriver(), aboutUs(), 2000);
+        clickElement(this.getDriver(), closeButton(), 2000);
+
 //        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
 //        click(selectCloseButton);
 
