@@ -1,6 +1,7 @@
 package common;
 
 import net.serenitybdd.core.pages.PageObject;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -52,6 +53,17 @@ public class Helper2 extends PageObject {
         waitABit(time);
         act.moveToElement(ldriver.findElement((By) signUpButton)).click().build().perform();
         waitABit(time);
+
+    }
+
+    public void selectSignUpAndAssertTrue (WebDriver ldriver, By element, int time, WebElement usernameField, WebElement passwordField, WebElement signUpButton, int time2) {
+        Actions act = new Actions(ldriver);
+        act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
+        waitABit(time);
+        Assert.assertTrue("Username is not displayed", usernameField.isDisplayed());
+        Assert.assertTrue("Password is not displayed", passwordField.isDisplayed());
+        Assert.assertTrue("Sign Up is not displayed", signUpButton.isDisplayed());
+        waitABit(time2);
     }
 }
 

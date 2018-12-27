@@ -7,6 +7,7 @@ import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Story;
 import net.thucydides.core.annotations.Title;
 import net.thucydides.junit.annotations.UseTestDataFrom;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -40,13 +41,17 @@ public class TestSignUp extends PageObject {
 
     }
 
+    @After
+    public void waitAndQuit () {
+        waitABit(1000);
+        driver.quit();
+    }
+
     @Test
     @Title("Username and Password text is present")
     public void loginElements() {
 
         step.loginElements();
-        waitABit(1000);
-        driver.quit();
     }
 
     @Test
@@ -54,9 +59,6 @@ public class TestSignUp extends PageObject {
     public void successfulSignUp() {
 
         step.signUpFunctionality();
-        waitABit(1000);
-        driver.quit();
-
     }
 
     @Test
@@ -64,8 +66,6 @@ public class TestSignUp extends PageObject {
     public void signUpEmptyFields() {
 
         step.signUpEmptyFields();
-        waitABit(1000);
-        driver.quit();
     }
 
     @Test
@@ -73,8 +73,6 @@ public class TestSignUp extends PageObject {
     public void emptyPasswordFieldSignUp() {
 
         step.signUpEmptyPasswordField();
-        waitABit(1000);
-        driver.quit();
     }
 
     @Test
@@ -82,8 +80,6 @@ public class TestSignUp extends PageObject {
     public void emptyUsernameFieldSignUp() {
 
         step.signUpEmptyUsernameField();
-        waitABit(1000);
-        driver.quit();
     }
 
     @Test
@@ -91,8 +87,6 @@ public class TestSignUp extends PageObject {
     public void specialCharactersSignUp() {
 
         step.specialCharacters();
-        waitABit(1000);
-        driver.quit();
     }
 
     @Test
@@ -100,8 +94,6 @@ public class TestSignUp extends PageObject {
     public void digitsSignUp() {
 
         step.digits();
-        waitABit(1000);
-        driver.quit();
     }
 
     @Test
@@ -109,8 +101,6 @@ public class TestSignUp extends PageObject {
     public void blankSpaceSignUp() {
 
         step.blankSpace();
-        waitABit(1000);
-        driver.quit();
     }
 
     @Test
@@ -118,8 +108,6 @@ public class TestSignUp extends PageObject {
     public void validCredentialsAndBlankSpaceSignUp() {
 
         step.validCredentialsAndBlankSpace();
-        waitABit(1000);
-        driver.quit();
     }
 
     @Test
@@ -127,8 +115,6 @@ public class TestSignUp extends PageObject {
     public void lowercaseCredentialsSignUp() {
 
         step.lowercaseCredentials();
-        waitABit(1000);
-        driver.quit();
     }
 
     @Test
@@ -136,7 +122,5 @@ public class TestSignUp extends PageObject {
     public void upperCredentialsSignUp() {
 
         step.upperCaseCredentials();
-        waitABit(1000);
-        driver.quit();
     }
-}
+    }

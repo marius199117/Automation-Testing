@@ -6,6 +6,7 @@ import net.thucydides.core.annotations.Story;
 import net.thucydides.core.annotations.Title;
 import net.thucydides.junit.annotations.UseTestDataFrom;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -44,13 +45,17 @@ public class TestAboutUsPage extends PageObject {
 
     }
 
+    @After
+    public void waitAndQuit () {
+        waitABit(1000);
+        driver.quit();
+    }
+
     @Test
     @Title("About Us button functionality")
     public void aboutUsFlowFunctionality() {
 
         step.aboutUsButtonFunctionality();
-
-
     }
 
     @Test
@@ -58,8 +63,6 @@ public class TestAboutUsPage extends PageObject {
     public void aboutUsXButtonFunctionality() {
 
         step.aboutUsXbutton();
-        waitABit(2000);
-        driver.quit();
     }
 
     @Test
@@ -67,7 +70,5 @@ public class TestAboutUsPage extends PageObject {
     public void aboutUsCloseButtonFunctionality() {
 
         step.aboutUsClosebutton();
-        waitABit(1000);
-        driver.quit();
     }
 }
