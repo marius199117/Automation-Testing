@@ -20,25 +20,25 @@ public class ContactPageSteps extends ScenarioSteps {
         sp.contactElements();
     }
 
-//    @Step("Test 3: Successful contact form")
-//    public void succesfullContactForm(String validEmail, String validName, String validMessage) {
-//        sp.succesfullContact(validEmail, validName, validMessage);
-//    }
-//
-//    @Step("Test 4: Cancel button functionality")
-//    public void cancelButtonFunctionality() {
-//        sp.cancelButtonFunctionality();
-//    }
-//
-//    @Step("Test 5: Contact form empty fields")
-//    public void contactEmptyFields() {
-//        sp.emptyFields();
-//    }
-//
-//    @Step("Test 6: Contact form invalid credentials")
-//    public void contactInvalidCredentials() {
-//
-//        UserInfo userInfo = new UserInfo().generateUser();
-//        sp.invalidCredentials(userInfo);
-//    }
+    @Step("Test 3: Successful contact form")
+    public void succesfullContactForm(String validEmail, String validName, String validMessage) {
+        sp.succesfullContact(validEmail, validName, validMessage);
+    }
+
+    @Step("Test 4: Cancel button functionality")
+    public void cancelButtonFunctionality() {
+        sp.cancelButtonFunctionality();
+    }
+
+    @Step("Test 5: Contact form empty fields")
+    public void contactEmptyFields() {
+        sp.emptyFields();
+    }
+
+    @Step("Test 6: Contact form invalid credentials")
+    public void contactInvalidCredentials() {
+
+        UserInfo userInfo = new UserInfo().generateUser();
+        sp.invalidCredentials(userInfo);
+    }
 }

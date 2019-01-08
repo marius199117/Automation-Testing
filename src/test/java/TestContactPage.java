@@ -65,39 +65,39 @@ public class TestContactPage extends PageObject {
         driver.quit();
     }
 
-//    @Test
-//    @Title("Contact Form")
-//    public void succesfullContactForm() {
-//
-//        step.succesfullContactForm(validEmail, validName, validMessage);
-//        waitABit(1000);
-//        driver.quit();
-//    }
-//
-//    @Test
-//    @Title("Contact - Cancel button functionalityZ")
-//    public void cancelButtonFunctionality() {
-//
-//        step.cancelButtonFunctionality();
-//        waitABit(1000);
-//        driver.quit();
-//    }
-//
-//    @Test
-//    @Title("Contact form empty fields")
-//    public void ContactEmptyFields() {
-//
-//        step.contactEmptyFields();
-//        waitABit(1000);
-//        driver.quit();
-//    }
-//
-//    @Test
-//    @Title("Contact form invalid credentials")
-//    public void ContactInvalidCredentials() {
-//
-//        step.contactInvalidCredentials();
-//        waitABit(1000);
-//        driver.quit();
-//    }
+    @Test
+    @Title("Contact Form")
+    public void succesfullContactForm() {
+
+        step.succesfullContactForm(validEmail, validName, validMessage);
+        waitABit(1000);
+        driver.quit();
+    }
+
+    @Test
+    @Title("Contact - Cancel button functionalityZ")
+    public void cancelButtonFunctionality() {
+
+        step.cancelButtonFunctionality();
+        waitABit(1000);
+        driver.quit();
+    }
+
+    @Test
+    @Title("Contact form empty fields")
+    public void ContactEmptyFields() {
+
+        step.contactEmptyFields();
+        waitABit(1000);
+        driver.quit();
+    }
+
+    @Test
+    @Title("Contact form invalid credentials")
+    public void ContactInvalidCredentials() {
+
+        step.contactInvalidCredentials();
+        waitABit(1000);
+        driver.quit();
+    }
 }
