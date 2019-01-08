@@ -92,9 +92,9 @@ public class ContactPage extends Helper2 {
     // Test 3: Successful contact form
     public void succesfullContact(String validEmail, String validName, String validMessage) {
         clickElement(this.getDriver(), contact(), 3000);
+        element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
         clickAndSendKeys(this.getDriver(), contactEmailField(), validEmail, 3000);
-        Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
         clickAndSendKeys(this.getDriver(), contactNameField(), validName, 3000);
         clickAndSendKeys(this.getDriver(), message(), validMessage, 3000);
         clickElement(this.getDriver(), sendMessage(), 5000);
@@ -103,6 +103,7 @@ public class ContactPage extends Helper2 {
     // Test 4: Cancel button functionality
     public void cancelButtonFunctionality() {
         clickElement(this.getDriver(), contact(), 3000);
+        element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
         clickElement(this.getDriver(), closeButton(), 3000);
     }
@@ -110,6 +111,7 @@ public class ContactPage extends Helper2 {
     // Test 5: Contact form empty fields
     public void emptyFields() {
         clickElement(this.getDriver(), contact(), 3000);
+        element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
         clickElement(this.getDriver(), sendMessage(), 3000);
     }
@@ -117,6 +119,7 @@ public class ContactPage extends Helper2 {
     // Test 6: Contact form invalid credentials
     public void invalidCredentials(UserInfo userInfo) {
         clickElement(this.getDriver(), contact(), 3000);
+        element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
         Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
         clickAndSendKeys(this.getDriver(), contactEmailField(), userInfo.invalidEmail, 3000);
         clickAndSendKeys(this.getDriver(), contactNameField(), userInfo.invalidName, 3000);
