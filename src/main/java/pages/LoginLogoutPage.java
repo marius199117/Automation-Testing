@@ -57,7 +57,7 @@ public class LoginLogoutPage extends Helper2 {
         return By.id("logout2");
     }
         public static By afterLoginElements () {
-            return By.cssSelector("body.modal-open:nth-child(2) div.modal.fade.show:nth-child(1) div.modal-dialog div.modal-content > div.modal-body");
+            return By.cssSelector("body.modal-open:nth-child(2) div.modal.fade.show:nth-child(3) div.modal-dialog div.modal-content > div.modal-body");
         }
 
         // Test 1: Login button functionality and elements are present
