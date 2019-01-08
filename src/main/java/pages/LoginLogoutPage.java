@@ -34,7 +34,7 @@ public class LoginLogoutPage extends Helper2 {
     @FindBy(id = "logout2")
     WebElement logout;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]")
+    @FindBy(css = "body.modal-open:nth-child(2) div.modal.fade.show:nth-child(1) div.modal-dialog div.modal-content > div.modal-body")
     WebElement afterLoginElements;
 
     public static By logIn() {
@@ -57,7 +57,7 @@ public class LoginLogoutPage extends Helper2 {
         return By.id("logout2");
     }
         public static By afterLoginElements () {
-            return By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]");
+            return By.cssSelector("body.modal-open:nth-child(2) div.modal.fade.show:nth-child(1) div.modal-dialog div.modal-content > div.modal-body");
         }
 
         // Test 1: Login button functionality and elements are present
