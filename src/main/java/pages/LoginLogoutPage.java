@@ -34,7 +34,7 @@ public class LoginLogoutPage extends Helper2 {
     @FindBy(id = "logout2")
     WebElement logout;
 
-    @FindBy(css = "body.modal-open:nth-child(2) div.modal.fade.show:nth-child(1) div.modal-dialog div.modal-content > div.modal-body")
+    @FindBy(xpath = "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]")
     WebElement afterLoginElements;
 
     public static By logIn() {
@@ -57,7 +57,7 @@ public class LoginLogoutPage extends Helper2 {
         return By.id("logout2");
     }
         public static By afterLoginElements () {
-            return By.cssSelector("body.modal-open:nth-child(2) div.modal.fade.show:nth-child(3) div.modal-dialog div.modal-content > div.modal-body");
+            return By.xpath("/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]");
         }
 
         // Test 1: Login button functionality and elements are present
@@ -78,8 +78,8 @@ public class LoginLogoutPage extends Helper2 {
             clickAndSendKeys(this.getDriver(), username(), user, 3000);
             clickAndSendKeys(this.getDriver(), password(), pass, 3000);
             clickElement(this.getDriver(), logInButton(), 3000);
-            Assert.assertTrue("Login Confirmation is not functional", loginConfirmation.isDisplayed());
             clickElement(this.getDriver(), logout(), 3000);
+            element(logIn()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
             Assert.assertTrue("The user is not logged out", logIn.isDisplayed());
 
         }
