@@ -15,28 +15,6 @@ import java.util.concurrent.TimeUnit;
 
 public class ContactPage extends Helper2 {
 
-
-    @FindBy(css = "a.nav-link[data-target*=\"#exampleModal\"]")
-    WebElement contact;
-
-    @FindBy(className = "modal-content")
-    WebElement afterClick;
-
-    @FindBy(id = "recipient-email")
-    WebElement contactEmailField;
-
-    @FindBy(id = "recipient-name")
-    WebElement contactNameField;
-
-    @FindBy(id = "message-text")
-    WebElement message;
-
-    @FindBy(xpath = "/html/body/div[1]/div/div/div[3]/button[1]")
-    WebElement closeButton;
-
-    @FindBy(css = "button.btn-primary[type*=\"button\"][onclick*=\"send()\"]")
-    WebElement sendMessage;
-
     public static By contact() {
         return By.cssSelector("a.nav-link[data-target*=\"#exampleModal\"]");
     }
@@ -69,31 +47,31 @@ public class ContactPage extends Helper2 {
     public void selectContact() {
 
         clickElement(this.getDriver(), contact(), 3000);
-        element(afterClick).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
+        element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue("Contact button is not functional", find(afterClick()).isDisplayed());
 
     }
 
     // Test 2: Contact elements are present
     public void contactElements() {
         clickElement(this.getDriver(), contact(), 3000);
-        element(afterClick).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
-        element(contactEmailField).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Contact Email Field is not displayed", contactEmailField.isDisplayed());
-        element(contactNameField).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Contact Name Field is not displayed", contactNameField.isDisplayed());
-        element(closeButton).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Close button is not displayed", closeButton.isDisplayed());
-        element(sendMessage).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Send Message is not displayed", sendMessage.isDisplayed());
+        element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue("Contact button is not functional", find(afterClick()).isDisplayed());
+        element(contactEmailField()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue("Contact Email Field is not displayed", find(contactEmailField()).isDisplayed());
+        element(contactNameField()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue("Contact Name Field is not displayed", find(contactNameField()).isDisplayed());
+        element(closeButton()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue("Close button is not displayed", find(closeButton()).isDisplayed());
+        element(sendMessage()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue("Send Message is not displayed", find(sendMessage()).isDisplayed());
     }
 
     // Test 3: Successful contact form
     public void succesfullContact(String validEmail, String validName, String validMessage) {
         clickElement(this.getDriver(), contact(), 3000);
         element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
+        Assert.assertTrue("Contact button is not functional", find(afterClick()).isDisplayed());
         clickAndSendKeys(this.getDriver(), contactEmailField(), validEmail, 3000);
         clickAndSendKeys(this.getDriver(), contactNameField(), validName, 3000);
         clickAndSendKeys(this.getDriver(), message(), validMessage, 3000);
@@ -104,7 +82,7 @@ public class ContactPage extends Helper2 {
     public void cancelButtonFunctionality() {
         clickElement(this.getDriver(), contact(), 3000);
         element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
+        Assert.assertTrue("Contact button is not functional", find(afterClick()).isDisplayed());
         clickElement(this.getDriver(), closeButton(), 3000);
     }
 
@@ -112,7 +90,7 @@ public class ContactPage extends Helper2 {
     public void emptyFields() {
         clickElement(this.getDriver(), contact(), 3000);
         element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
+        Assert.assertTrue("Contact button is not functional", find(afterClick()).isDisplayed());
         clickElement(this.getDriver(), sendMessage(), 3000);
     }
 
@@ -120,7 +98,7 @@ public class ContactPage extends Helper2 {
     public void invalidCredentials(UserInfo userInfo) {
         clickElement(this.getDriver(), contact(), 3000);
         element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Contact button is not functional", afterClick.isDisplayed());
+        Assert.assertTrue("Contact button is not functional", find(afterClick()).isDisplayed());
         clickAndSendKeys(this.getDriver(), contactEmailField(), userInfo.invalidEmail, 3000);
         clickAndSendKeys(this.getDriver(), contactNameField(), userInfo.invalidName, 3000);
         clickAndSendKeys(this.getDriver(), message(), userInfo.invalidMessage, 3000);

@@ -2,69 +2,83 @@ package pages;
 
 import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class FirstPage extends PageObject {
 
-    @FindBy(id = "nava")
-    WebElement title;
+    public static By title() {
+        return By.id("nava");
+    }
 
-    @FindBy(css = "a.nav-link[href*=\"index.html\"]")
-    WebElement home;
+    public static By home() {
+        return By.cssSelector("a.nav-link[href*=\"index.html\"]");
+    }
 
-    @FindBy(css = "a.nav-link[data-target*=\"#exampleModal\"]")
-    WebElement contact;
+    public static By contact() {
+        return By.cssSelector("a.nav-link[data-target*=\"#exampleModal\"]");
+    }
 
-    @FindBy(css = "a.nav-link[data-target*=\"#videoModal\"]")
-    WebElement about;
+    public static By about() {
+        return By.cssSelector("a.nav-link[href*=\"cart.html\"]");
+    }
 
-    @FindBy(css = "a.nav-link[href*=\"cart.html\"]")
-    WebElement cart;
+    public static By cart() {
+        return By.cssSelector("a.nav-link[data-target*=\"#videoModal\"]");
+    }
 
-    @FindBy(css = "a.nav-link[data-target*=\"#logInModal\"]")
-    WebElement logIn;
+    public static By logIn() {
+        return By.cssSelector("a.nav-link[data-target*=\"#logInModal\"]");
+    }
 
-    @FindBy(css = "a.nav-link[data-target*=\"#signInModal\"]")
-    WebElement signIn;
+    public static By signIn() {
+        return By.cssSelector("a.nav-link[data-target*=\"#signInModal\"]");
+    }
 
-    @FindBy(css = "#cat.list-group-item")
-    WebElement categories;
+    public static By categories() {
+        return By.cssSelector("#cat.list-group-item");
+    }
 
-    @FindBy(css = ".carousel-inner")
-    WebElement slider;
+    public static By slider() {
+        return By.cssSelector(".carousel-inner");
+    }
 
-    @FindBy(css = ".list-group-item[onclick=\"byCat('phone')\"]")
-    WebElement phones;
+    public static By phones() {
+        return By.cssSelector(".list-group-item[onclick=\"byCat('phone')\"]");
+    }
 
-    @FindBy(css = ".list-group-item[onclick=\"byCat('notebook')\"]")
-    WebElement laptops;
+    public static By laptops() {
+        return By.cssSelector(".list-group-item[onclick=\"byCat('phone')\"]");
+    }
 
-    @FindBy(css = ".list-group-item[onclick=\"byCat('notebook')\"]")
-    WebElement monitor;
+    public static By monitor() {
+        return By.cssSelector(".list-group-item[onclick=\"byCat('notebook')\"]");
+    }
 
-    @FindBy(id = "prev2")
-    WebElement previousButton;
+    public static By previousButton() {
+        return By.id("prev2");
+    }
 
-    @FindBy(id = "next2")
-    WebElement nextButton;
-
+    public static By nextButton() {
+        return By.id("next2");
+    }
 
     // Test 1: First page elements are displayed
     public void firstPageElements() {
-        Assert.assertTrue("Product Store is not displayed", title.isDisplayed());
-        Assert.assertTrue("Home is not displayed", home.isDisplayed());
-        Assert.assertTrue("Contact is not displayed", contact.isDisplayed());
-        Assert.assertTrue("About is not displayed", about.isDisplayed());
-        Assert.assertTrue("Cart is not displayed", cart.isDisplayed());
-        Assert.assertTrue("Log in is not displayed", logIn.isDisplayed());
-        Assert.assertTrue("Sign in is not displayed", signIn.isDisplayed());
-        Assert.assertTrue("Categories is not displayed", categories.isDisplayed());
-        Assert.assertTrue("Slider is not displayed", slider.isDisplayed());
-        Assert.assertTrue("Phones is not displayed", phones.isDisplayed());
-        Assert.assertTrue("Laptops is not displayed", laptops.isDisplayed());
-        Assert.assertTrue("Monitor is not displayed", monitor.isDisplayed());
-        Assert.assertTrue("Previous button is not displayed", previousButton.isDisplayed());
-        Assert.assertTrue("Next button is not displayed", nextButton.isDisplayed());
+        Assert.assertTrue("Product Store is not displayed", find(title()).isDisplayed());
+        Assert.assertTrue("Home is not displayed", find(home()).isDisplayed());
+        Assert.assertTrue("Contact is not displayed", find(contact()).isDisplayed());
+        Assert.assertTrue("About is not displayed", find(about()).isDisplayed());
+        Assert.assertTrue("Cart is not displayed", find(cart()).isDisplayed());
+        Assert.assertTrue("Log in is not displayed", find(logIn()).isDisplayed());
+        Assert.assertTrue("Sign in is not displayed", find(signIn()).isDisplayed());
+        Assert.assertTrue("Categories is not displayed", find(categories()).isDisplayed());
+        Assert.assertTrue("Slider is not displayed", find(slider()).isDisplayed());
+        Assert.assertTrue("Phones is not displayed", find(phones()).isDisplayed());
+        Assert.assertTrue("Laptops is not displayed", find(laptops()).isDisplayed());
+        Assert.assertTrue("Monitor is not displayed", find(monitor()).isDisplayed());
+        Assert.assertTrue("Previous button is not displayed", find(previousButton()).isDisplayed());
+        Assert.assertTrue("Next button is not displayed", find(nextButton()).isDisplayed());
     }
 }
