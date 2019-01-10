@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bc72ef-b678-41e9-be11-ffb277be104b" name="Default" comment="- Update code2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Helper2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Helper2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/AboutUsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/AboutUsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/ContactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/ContactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/FirstPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/FirstPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/SignUpPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/SignUpPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/716812577f1f07f0541a79c692aa4e6e1e747407ca2e62e9ffca632ee15bcc82.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/716812577f1f07f0541a79c692aa4e6e1e747407ca2e62e9ffca632ee15bcc82.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/716812577f1f07f0541a79c692aa4e6e1e747407ca2e62e9ffca632ee15bcc82.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/716812577f1f07f0541a79c692aa4e6e1e747407ca2e62e9ffca632ee15bcc82.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/scripts/imgpreview.full.jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/scripts/jquery-1.11.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/scripts/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSignUp.java" afterDir="false" />
     </list>
     <ignored path="Sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +45,7 @@
           <entry key="csv" value="21" />
           <entry key="exe" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="482" />
+          <entry key="java" value="487" />
           <entry key="md" value="2" />
           <entry key="properties" value="5" />
           <entry key="xml" value="12" />
@@ -68,7 +56,7 @@
           <entry key="CLASS" value="2" />
           <entry key="CSV" value="8" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="482" />
+          <entry key="JAVA" value="487" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="Properties" value="5" />
           <entry key="XML" value="12" />
@@ -101,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/SignUpPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="129" column="115" selection-start-line="129" selection-start-column="115" selection-end-line="129" selection-end-column="115" />
+            <state relative-caret-position="306">
+              <caret line="44" column="115" selection-start-line="44" selection-start-column="115" selection-end-line="44" selection-end-column="115" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,11 +98,59 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestSignUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="1575">
               <caret line="122" selection-start-line="122" selection-end-line="122" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestLoginLogout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestHomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestContactPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestFirstPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/steps/LoginLogoutPageSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="39" column="40" lean-forward="true" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -122,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/common/Helper2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="79" column="1" lean-forward="true" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+            <state relative-caret-position="799">
+              <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -192,7 +228,6 @@
         <option value="$PROJECT_DIR$/src/main/java/common/Helper.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestAboutUsPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/urls.csv" />
-        <option value="$PROJECT_DIR$/src/test/java/TestSignUp.java" />
         <option value="$PROJECT_DIR$/src/main/java/steps/SignUpSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/PlaceOrderPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/steps/ContactPageSteps.java" />
@@ -203,8 +238,9 @@
         <option value="$PROJECT_DIR$/src/main/java/pages/ContactPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/AboutUsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/FirstPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/common/Helper2.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/SignUpPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/Helper2.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestSignUp.java" />
       </list>
     </option>
   </component>
@@ -216,10 +252,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="2145" />
-    <option name="y" value="89" />
-    <option name="width" value="1536" />
-    <option name="height" value="824" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -356,7 +392,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="android.sdk.path" value="C:/adt-bundle-windows-x86_64-20140702/sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547111883423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547114599356" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Automation project" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -683,12 +719,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSignUp - 2018.12.28 at 16h 12m 03s.xml">
-      <configuration name="TestSignUp" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSignUp - 2018.12.28 at 16h 20m 37s.xml">
-      <configuration name="TestSignUp" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestSignUp - 2018.12.28 at 16h 38m 03s.xml">
       <configuration name="TestSignUp" configurationId="JUnit" />
     </history-entry>
@@ -713,6 +743,12 @@
     <history-entry file="TestSignUp - 2019.01.10 at 11h 13m 50s.xml">
       <configuration name="TestSignUp" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestSignUp - 2019.01.10 at 11h 18m 14s.xml">
+      <configuration name="TestSignUp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSignUp - 2019.01.10 at 11h 26m 42s.xml">
+      <configuration name="TestSignUp" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -724,10 +760,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14232409" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17919463" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -736,7 +772,7 @@
       <window_info id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4283688" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -861,13 +897,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/urls.csv" />
     <entry file="file://$PROJECT_DIR$/src/test/Resources/urls.csv" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/steps/LoginLogoutPageSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-core/1.2.5-rc.5/serenity-core-1.2.5-rc.5-sources.jar!/net/thucydides/core/annotations/Managed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -881,22 +910,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestFirstPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1044,16 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestContactPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/FirstPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1079,13 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestLoginLogout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1122,17 +1120,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/Helper2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="79" column="1" lean-forward="true" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/SignUpPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="129" column="115" selection-start-line="129" selection-start-column="115" selection-end-line="129" selection-end-column="115" />
+        <state relative-caret-position="306">
+          <caret line="44" column="115" selection-start-line="44" selection-start-column="115" selection-end-line="44" selection-end-column="115" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1141,8 +1132,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSignUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="1575">
           <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/Helper2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestLoginLogout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestHomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestContactPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestFirstPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/steps/LoginLogoutPageSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="39" column="40" lean-forward="true" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
         </state>
       </provider>
     </entry>

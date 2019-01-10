@@ -42,7 +42,7 @@ public class TestSignUp extends PageObject {
     }
 
     @After
-    public void waitAndQuit () {
+    public void waitAndQuit() {
         waitABit(1000);
         driver.quit();
     }
@@ -123,4 +123,4 @@ public class TestSignUp extends PageObject {
 
         step.upperCaseCredentials();
     }
-    }
+}
