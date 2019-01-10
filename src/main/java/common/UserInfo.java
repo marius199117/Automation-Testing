@@ -45,9 +45,10 @@ public class UserInfo {
         passwordLowercaseCredentials = usernameLowercaseCredentials;
         usernameUppercaseCredentials = new RandomString(10, new Random(), RandomString.upper).nextString();
         passwordUppercaseCredentials = usernameUppercaseCredentials;
-        invalidEmail = new RandomString(10,new Random(), RandomString.alphanum).nextString();
+        invalidEmail = new RandomString(10, new Random(), RandomString.alphanum).nextString();
         invalidName = invalidEmail;
         invalidMessage = invalidEmail;
+
 
 
         // login name for mail validation flow

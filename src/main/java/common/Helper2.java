@@ -11,6 +11,8 @@ import org.yecht.Data;
 
 import java.util.concurrent.TimeUnit;
 
+import static pages.ContactPage.afterClick;
+
 public class Helper2 extends PageObject {
 
     public void clickElement(WebDriver ldriver, By element, int time) {
@@ -57,7 +59,7 @@ public class Helper2 extends PageObject {
         waitABit(time);
     }
 
-    public void selectSignUpAndAssertTrue(WebDriver ldriver, By element, int time, By element2, String message) {
+    public void selectAndAssertTrue(WebDriver ldriver, By element, int time, By element2, String message) {
         Actions act = new Actions(ldriver);
         act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
         waitABit(time);
@@ -66,4 +68,8 @@ public class Helper2 extends PageObject {
 
     }
 
+    public void verifyAndAssertElement(By element, String message) {
+        element(element).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue(message, find(element).isDisplayed());
+    }
 }

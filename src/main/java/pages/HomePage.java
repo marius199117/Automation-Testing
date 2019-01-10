@@ -27,9 +27,7 @@ public class HomePage extends Helper2 {
 
     // Test 1: Home button functionality
     public void selectHome() {
-        clickElement(this.getDriver(), home(), 3000);
-        element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
-        Assert.assertTrue("Home button is not functional", find(afterClick()).isDisplayed());
+        selectAndAssertTrue(this.getDriver(), home(), 3000, afterClick(), "Home button is not functional");
     }
 
 }

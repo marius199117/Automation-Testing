@@ -42,7 +42,7 @@ public class SignUpPage extends Helper2 {
 
     // Test 2 : Successful sign up
     public void successfulSignUp(UserInfo userInfo) {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickAndSendKeys(this.getDriver(), usernameField(), userInfo.username, 2000);
         clickAndSendKeysPasswordOrUsername(this.getDriver(), passwordField(), userInfo.password, 2000, signUpButton());
         clickElement(this.getDriver(), signUpButton(), 2000);
@@ -50,43 +50,43 @@ public class SignUpPage extends Helper2 {
 
     // Test 3 : Empty fields sign up
     public void emptyFieldsSignUp() {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickElement(this.getDriver(), signUpButton(), 2000);
     }
 
     // Test 4: Username field with valid credentials and empty field for password
     public void emptyFieldForPasswordSignUp(UserInfo userInfo) {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickAndSendKeysPasswordOrUsername(this.getDriver(), usernameField(), userInfo.username, 2000, signUpButton());
     }
 
     // Test 5: Username field with valid credentials and empty field for password
     public void emptyFieldForUsernameSignUp(UserInfo userInfo) {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickAndSendKeysPasswordOrUsername(this.getDriver(), usernameField(), userInfo.password, 2000, signUpButton());
     }
 
     // Test 6: Invalid credentials (special characters for username and password)
     public void specialCharactersSignUp(UserInfo userInfo) {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickAndSendKeysAndSelectButton(this.getDriver(), usernameField(), userInfo.username, passwordField(), userInfo.password, 2000, signUpButton());
     }
 
     // Test 7: Invalid credentials (Digits for username and password)
     public void digitsSignUp(UserInfo userInfo) {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickAndSendKeysAndSelectButton(this.getDriver(), usernameField(), userInfo.usernameDigits, passwordField(), userInfo.passwordDigits, 2000, signUpButton());
     }
 
     // Test 8: Invalid credentials (select space to put blank space for username and password )
     public void blankSpaceSignUp() {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickAndSendKeysAndSelectButton(this.getDriver(), usernameField(), " ", passwordField(), " ", 2000, signUpButton());
     }
 
     // Test 9: Invalid credentials (valid username and password and a blank space)
     public void validCredentialsAndBlankSpaceSignUp(UserInfo userInfo) {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickAndSendKeysAndSelectButton(this.getDriver(), usernameField(), userInfo.validUsernameBlankSpace, passwordField(), userInfo.validPasswordBlankSpace, 2000, signUpButton());
     }
 

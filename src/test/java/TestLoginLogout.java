@@ -91,15 +91,6 @@ public class TestLoginLogout extends PageObject {
     }
 
     @Test
-    @Title("Invalid credentials (invalid username and password credentials)")
-    public void invalidCredentialsLogin() throws InterruptedException {
-
-        step.invalidCredentials();
-        Thread.sleep(1000);
-        driver.quit();
-    }
-
-    @Test
     @Title("Invalid credentials (valid username and password with a space afterwards)")
     public void usernamePasswordSpaceAfterwardsLogin() {
 
@@ -107,4 +98,14 @@ public class TestLoginLogout extends PageObject {
         waitABit(1000);
         driver.quit();
     }
+
+    @Test
+    @Title("Invalid credentials (valid username and password with a space afterwards)")
+    public void digitsUsernamePasswordLogin() {
+
+        step.digitsUsernamePassword();
+        waitABit(1000);
+        driver.quit();
+    }
+
 }

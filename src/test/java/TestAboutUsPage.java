@@ -46,7 +46,7 @@ public class TestAboutUsPage extends PageObject {
     }
 
     @After
-    public void waitAndQuit () {
+    public void waitAndQuit() {
         waitABit(1000);
         driver.quit();
     }
