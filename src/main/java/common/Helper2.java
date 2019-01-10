@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.yecht.Data;
 
+import java.util.concurrent.TimeUnit;
+
 public class Helper2 extends PageObject {
 
     public void clickElement(WebDriver ldriver, By element, int time) {
@@ -17,13 +19,13 @@ public class Helper2 extends PageObject {
         waitABit(time);
     }
 
-   public void sendKeys (WebDriver ldriver, By element, String message, int time) {
-       Actions act = new Actions(ldriver);
-       act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
-       waitABit(time);
-   }
+    public void sendKeys(WebDriver ldriver, By element, String message, int time) {
+        Actions act = new Actions(ldriver);
+        act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
+        waitABit(time);
+    }
 
-    public void clickAndSendKeys (WebDriver ldriver, By element, String message, int time) {
+    public void clickAndSendKeys(WebDriver ldriver, By element, String message, int time) {
         Actions act = new Actions(ldriver);
         act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
         waitABit(time);
@@ -31,7 +33,7 @@ public class Helper2 extends PageObject {
         waitABit(time);
     }
 
-    public void clickAndSendKeysAndSelectButton (WebDriver ldriver, By element, String message, By element2, String message2, int time, By signUpButton) {
+    public void clickAndSendKeysAndSelectButton(WebDriver ldriver, By element, String message, By element2, String message2, int time, By signUpButton) {
         Actions act = new Actions(ldriver);
         act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
         waitABit(time);
@@ -45,7 +47,7 @@ public class Helper2 extends PageObject {
         waitABit(time);
     }
 
-    public void clickAndSendKeysPasswordOrUsername (WebDriver ldriver, By element, String message, int time, By signUpButton) {
+    public void clickAndSendKeysPasswordOrUsername(WebDriver ldriver, By element, String message, int time, By signUpButton) {
         Actions act = new Actions(ldriver);
         act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
         waitABit(time);
@@ -53,17 +55,15 @@ public class Helper2 extends PageObject {
         waitABit(time);
         act.moveToElement(ldriver.findElement((By) signUpButton)).click().build().perform();
         waitABit(time);
-
     }
 
-    public void selectSignUpAndAssertTrue (WebDriver ldriver, By element, int time, WebElement usernameField, WebElement passwordField, WebElement signUpButton, int time2) {
+    public void selectSignUpAndAssertTrue(WebDriver ldriver, By element, int time, By element2, String message) {
         Actions act = new Actions(ldriver);
         act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
         waitABit(time);
-        Assert.assertTrue("Username is not displayed", usernameField.isDisplayed());
-        Assert.assertTrue("Password is not displayed", passwordField.isDisplayed());
-        Assert.assertTrue("Sign Up is not displayed", signUpButton.isDisplayed());
-        waitABit(time2);
-    }
-}
+        element(element2).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
+        Assert.assertTrue(message, find(element2).isDisplayed());
 
+    }
+
+}
