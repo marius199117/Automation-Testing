@@ -30,7 +30,7 @@ public class AboutUsPage extends Helper2 {
     // Test 1 : Select About Us and Select the video from the About Us section
     public void selectAboutUs() {
         selectAndAssertTrue(this.getDriver(), aboutUs(), 2000, aboutUs(), "About Us button is not functional");
-        selectAndAssertTrue(this.getDriver(), afterClick(), 2000, aboutUs(), "Video is not functional");
+        clickElement(this.getDriver(), afterClick(), 2000);
     }
 
     // Test 2 : Select About Us and X button
