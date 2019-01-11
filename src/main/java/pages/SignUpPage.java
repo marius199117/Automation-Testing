@@ -92,13 +92,13 @@ public class SignUpPage extends Helper2 {
 
     // Test 10: Invalid credentials (lowercase credentials for password)
     public void lowercaseCredentials(UserInfo userInfo) {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickAndSendKeysAndSelectButton(this.getDriver(), usernameField(), userInfo.username, passwordField(), userInfo.passwordLowercaseCredentials, 2000, signUpButton());
     }
 
     // Test 11: Invalid credentials (uppercase credentials for password)
     public void uppercaseCredentials(UserInfo userInfo) {
-        selectSignUpAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
+        selectAndAssertTrue(this.getDriver(), signUp(), 2000, signUpElements(), "Sign Up is not functional");
         clickAndSendKeysAndSelectButton(this.getDriver(), usernameField(), userInfo.username, passwordField(), userInfo.passwordUppercaseCredentials, 2000, signUpButton());
     }
 }
