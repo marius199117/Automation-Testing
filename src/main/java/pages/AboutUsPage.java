@@ -29,33 +29,21 @@ public class AboutUsPage extends Helper2 {
 
     // Test 1 : Select About Us and Select the video from the About Us section
     public void selectAboutUs() {
-        clickElement(this.getDriver(), aboutUs(), 2000);
-        clickElement(this.getDriver(), afterClick(), 2000);
-
-//        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
-//        waitABit(2000);
-//        clickAndAssert(afterClick, afterVideoClick, "Video is not functional");
+        selectAndAssertTrue(this.getDriver(), aboutUs(), 2000, aboutUs(), "About Us button is not functional");
+        selectAndAssertTrue(this.getDriver(), afterClick(), 2000, aboutUs(), "Video is not functional");
     }
 
     // Test 2 : Select About Us and X button
     public void selectAboutUsXbutton() {
-        clickElement(this.getDriver(), aboutUs(), 2000);
+        selectAndAssertTrue(this.getDriver(), aboutUs(), 2000, aboutUs(), "About Us button is not functional");
         clickElement(this.getDriver(), selectXButton(), 2000);
-
-//        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
-//        click(selectXButton);
     }
 
     //
     // Test 3 : Select About Us and Close button
     public void selectCloseAboutUs() {
-        clickElement(this.getDriver(), aboutUs(), 2000);
+        selectAndAssertTrue(this.getDriver(), aboutUs(), 2000, aboutUs(), "About Us button is not functional");
         clickElement(this.getDriver(), selectCloseButton(), 2000);
-
-//        clickAndAssert(aboutUs, afterClick, "About Us button is not functional");
-//        click(selectCloseButton);
-
-
     }
 }
 
