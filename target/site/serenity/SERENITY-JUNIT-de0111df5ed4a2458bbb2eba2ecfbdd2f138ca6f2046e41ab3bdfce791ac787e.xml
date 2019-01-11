@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="TestLoginLogout" skipped="0" tests="7" time="126.25" timestamp="2019-01-09 05:09:02"><testcase classname="TestLoginLogout" name="Invalid credentials (valid username and password with a space afterwards)"/><testcase classname="TestLoginLogout" name="Empty field for username"/><testcase classname="TestLoginLogout" name="Login button functionality and elements are present"/><testcase classname="TestLoginLogout" name="Succesfull login"><failure message="Timed out after 15 seconds waiting for By.cssSelector: a.nav-link[data-target*=&quot;#logInModal&quot;] to be displayed&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'&#10;Driver info: driver.version: unknown&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'&#10;Driver info: driver.version: unknown&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'&#10;Driver info: driver.version: unknown&#10;Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'&#10;System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeVisibleException">Timed out after 15 seconds waiting for By.cssSelector: a.nav-link[data-target*="#logInModal"] to be displayed
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: driver.version: unknown</failure><system-err>Timed out after 15 seconds waiting for By.cssSelector: a.nav-link[data-target*="#logInModal"] to be displayed
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: driver.version: unknown
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-ASL910K', ip: '10.0.2.73', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: driver.version: unknown&#13;
+pages.LoginLogoutPage.successfulLogin(LoginLogoutPage.java:70)&#13;
+steps.LoginLogoutPageSteps.successfullLogin(LoginLogoutPageSteps.java:19)&#13;
+TestLoginLogout.successfulLogin(TestLoginLogout.java:61)&#13;
+</system-err></testcase><testcase classname="TestLoginLogout" name="Empty field for password"/><testcase classname="TestLoginLogout" name="Empty fields login"/><testcase classname="TestLoginLogout" name="Invalid credentials (invalid username and password credentials)"/></testsuite>
