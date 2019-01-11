@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class LoginLogoutPage extends Helper2 {
 
