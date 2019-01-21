@@ -17,51 +17,51 @@ public class Helper2 extends PageObject {
 
     public void clickElement(WebDriver ldriver, By element, int time) {
         Actions act = new Actions(ldriver);
-        act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
+        act.moveToElement(ldriver.findElement(element)).click().build().perform();
         waitABit(time);
     }
 
     public void sendKeys(WebDriver ldriver, By element, String message, int time) {
         Actions act = new Actions(ldriver);
-        act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
+        act.moveToElement(ldriver.findElement(element)).sendKeys(message).build().perform();
         waitABit(time);
     }
 
     public void clickAndSendKeys(WebDriver ldriver, By element, String message, int time) {
         Actions act = new Actions(ldriver);
-        act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
+        act.moveToElement(ldriver.findElement(element)).click().build().perform();
         waitABit(time);
-        act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
+        act.moveToElement(ldriver.findElement(element)).sendKeys(message).build().perform();
         waitABit(time);
     }
 
     public void clickAndSendKeysAndSelectButton(WebDriver ldriver, By element, String message, By element2, String message2, int time, By signUpButton) {
         Actions act = new Actions(ldriver);
-        act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
+        act.moveToElement(ldriver.findElement(element)).click().build().perform();
         waitABit(time);
-        act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
+        act.moveToElement(ldriver.findElement(element)).sendKeys(message).build().perform();
         waitABit(time);
-        act.moveToElement(ldriver.findElement((By) element2)).click().build().perform();
+        act.moveToElement(ldriver.findElement(element2)).click().build().perform();
         waitABit(time);
-        act.moveToElement(ldriver.findElement((By) element2)).sendKeys(message2).build().perform();
+        act.moveToElement(ldriver.findElement(element2)).sendKeys(message2).build().perform();
         waitABit(time);
-        act.moveToElement(ldriver.findElement((By) signUpButton)).click().build().perform();
-        waitABit(time);
-    }
-
-    public void clickAndSendKeysPasswordOrUsername(WebDriver ldriver, By element, String message, int time, By signUpButton) {
-        Actions act = new Actions(ldriver);
-        act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
-        waitABit(time);
-        act.moveToElement(ldriver.findElement((By) element)).sendKeys(message).build().perform();
-        waitABit(time);
-        act.moveToElement(ldriver.findElement((By) signUpButton)).click().build().perform();
+        act.moveToElement(ldriver.findElement(signUpButton)).click().build().perform();
         waitABit(time);
     }
 
-    public void selectAndAssertTrue(WebDriver ldriver, By element, int time, By element2, String message) {
-        Actions act = new Actions(ldriver);
-        act.moveToElement(ldriver.findElement((By) element)).click().build().perform();
+    public void clickAndSendKeysPasswordOrUsername(WebDriver webDriver, By element, String message, int time, By signUpButton) {
+        Actions act = new Actions(webDriver);
+        act.moveToElement(webDriver.findElement(element)).click().build().perform();
+        waitABit(time);
+        act.moveToElement(webDriver.findElement(element)).sendKeys(message).build().perform();
+        waitABit(time);
+        act.moveToElement(webDriver.findElement(signUpButton)).click().build().perform();
+        waitABit(time);
+    }
+
+    public void selectAndAssertTrue(WebDriver webDriver, By element, int time, By element2, String message) {
+        Actions act = new Actions(webDriver);
+        act.moveToElement(webDriver.findElement(element)).click().build().perform();
         waitABit(time);
         element(element2).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
         Assert.assertTrue(message, find(element2).isDisplayed());

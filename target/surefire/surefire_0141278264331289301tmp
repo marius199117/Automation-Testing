@@ -1,0 +1,9 @@
+#surefire_0
+#Sun Jan 13 21:21:00 EET 2019
+user.dir=C\:\\Automation project 2
+context=android
+webdriver.driver=chrome
+webdriver.chrome.driver=webdrivers\\chromedriver.exe
+localRepository=C\:\\Users\\Marius\\.m2\\repository
+webdriver.ie.driver=webdrivers\\IEDriverServer.exe
+basedir=C\:\\Automation project 2

@@ -2,7 +2,20 @@ package common;
 
 import java.util.Random;
 
+
 public class UserInfo {
+    public static void main(String[] args) {
+        System.out.println("Marius" + System.currentTimeMillis());
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Marius" + System.currentTimeMillis());
+        System.out.println("Marius" + System.currentTimeMillis());
+
+    }
+
     public String username = "";
     public String password = "";
     public String username2 = "";
@@ -50,11 +63,12 @@ public class UserInfo {
         invalidMessage = invalidEmail;
 
 
-
         // login name for mail validation flow
         return this;
 
     }
+
+
 }
 
 
