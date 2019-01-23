@@ -1,3 +1,4 @@
+import junit.framework.TestSuite;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Managed;
@@ -70,5 +71,9 @@ public class TestAboutUsPage extends PageObject {
     public void aboutUsCloseButtonFunctionality() {
 
         step.aboutUsClosebutton();
+    }
+
+    public static final Test suite() {
+        return (Test) new TestSuite(TestAboutUsPage.class);
     }
 }
