@@ -1,3 +1,4 @@
+import junit.framework.TestSuite;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Managed;
@@ -99,5 +100,9 @@ public class TestContactPage extends PageObject {
         step.contactInvalidCredentials();
         waitABit(1000);
         driver.quit();
+    }
+
+    public static final Test suite() {
+        return (Test) new TestSuite(TestContactPage.class);
     }
 }
