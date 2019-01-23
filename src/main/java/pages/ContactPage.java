@@ -49,7 +49,6 @@ public class ContactPage extends Helper2 {
         clickElement(this.getDriver(), contact(), 3000);
         element(afterClick()).withTimeoutOf(15, TimeUnit.SECONDS).waitUntilVisible();
         Assert.assertTrue("Contact button is not functional", find(afterClick()).isDisplayed());
-
     }
 
     // Test 2: Contact elements are present

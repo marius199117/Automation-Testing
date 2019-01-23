@@ -1,13 +1,13 @@
 package pages;
 
-import common.Helper;
-import common.Helper2;
-import org.assertj.core.api.SoftAssertions;
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
+        import common.Helper;
+        import common.Helper2;
+        import org.assertj.core.api.SoftAssertions;
+        import org.junit.Assert;
+        import org.openqa.selenium.By;
+        import org.openqa.selenium.WebElement;
+        import org.openqa.selenium.interactions.Actions;
+        import org.openqa.selenium.support.FindBy;
 
 public class AboutUsPage extends Helper2 {
 
