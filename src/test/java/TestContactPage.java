@@ -101,8 +101,4 @@ public class TestContactPage extends PageObject {
         waitABit(1000);
         driver.quit();
     }
-
-    public static final Test suite() {
-        return (Test) new TestSuite(TestContactPage.class);
-    }
 }

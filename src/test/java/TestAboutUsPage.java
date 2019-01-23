@@ -72,8 +72,4 @@ public class TestAboutUsPage extends PageObject {
 
         step.aboutUsClosebutton();
     }
-
-    public static final Test suite() {
-        return (Test) new TestSuite(TestAboutUsPage.class);
-    }
 }
