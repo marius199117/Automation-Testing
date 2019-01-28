@@ -28,8 +28,8 @@ public class TestLoginLogout extends PageObject {
     @Steps
     private LoginLogoutPageSteps step;
     private String url;
-    private String username;
-    private String password;
+    private String user;
+    private String pass;
 
 
     @Before
@@ -58,7 +58,7 @@ public class TestLoginLogout extends PageObject {
     @Title("Succesfull login")
     public void successfulLogin() {
 
-        step.successfullLogin(username, password);
+        step.successfullLogin(user, pass);
         waitABit(1000);
         driver.quit();
     }
@@ -76,7 +76,7 @@ public class TestLoginLogout extends PageObject {
     @Title("Empty field for username")
     public void emptyUsernameLogin() {
 
-        step.emptyUsernameField(password);
+        step.emptyUsernameField(pass);
         waitABit(1000);
         driver.quit();
     }
@@ -85,7 +85,7 @@ public class TestLoginLogout extends PageObject {
     @Title("Empty field for password")
     public void emptyPasswordLogin() {
 
-        step.emptyPasswordField(username);
+        step.emptyPasswordField(user);
         waitABit(1000);
         driver.quit();
     }
